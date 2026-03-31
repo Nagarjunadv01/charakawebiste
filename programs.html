@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/fevicon.png">
+	<!--<link rel="shortcut icon" type="image/x-icon" href="images/fevicon.png">-->
 	<!-- CSS
 			============================================ -->
 	<!-- Bootstrap CSS -->
@@ -145,6 +145,22 @@
 			color: #052e3b !important;
 			border: 1px solid #052e3b;
 		}
+
+		  @media (max-width: 1200px) {
+
+            .pbmit-header-style-1 .pbmit-main-header-area>.container-fluid,
+            .pbmit-header-style-1 .pbmit-sticky-header>.container-fluid {
+                padding: 10px 30px 15px
+                    /* width: 90%; */
+            }
+
+            .logowidth {
+                width: 100%;
+            }
+        }
+         .logowidth {
+            width: 65%;
+        }
 	</style>
 </head>
 
@@ -158,15 +174,16 @@
 			<div class="pbmit-sticky-header pbmit-header-sticky-yes"></div>
 			<div class="pbmit-header-overlay">
 				<div class="pbmit-main-header-area pbmit-infostack-header">
-					<div class="container-fluid">
+				 <div class="container-fluid">
 						<div class="pbmit-header-content d-flex justify-content-between align-items-center gap-4">
 							<div class="pbmit-header-menu-area d-flex align-items-center justify-content-between">
 								<div class="pbmit-logo-area col-md-1 col-4">
 									<div class="site-branding ">
 										<h1 class="site-title ">
-											<a href="index.html">
+											<a href="index.html" class="d-flex flex-row align-items-center">
 												<img class="pbmit-main-logo img-fluid"
 													src="images/website/website/charaka-logo.png" width="55%" alt="">
+												<span>CHARAKA</span>
 											</a>
 										</h1>
 									</div>
@@ -178,22 +195,9 @@
 											<div class="pbmit-menu-wrap">
 												<ul class="navigation clearfix" id="pbmit-top-menu">
 
-													<li class="active"><a href="index.html">Home</a></li>
-													<li class="dropdown">
-														<a href="#">About Us <i
-																class="fa fa-chevron-down fw-bold"></i></a>
-														<ul class="sub-menu">
-															<li><a href="#">Why This Matters</a></li>
-															<li><a href="#">Assistive Technology</a></li>
-															<li><a href="#">AI & Digital Health</a></li>
-															<li><a href="#">Translational Research</a></li>
-															<li><a href="#">Public Health Innovation</a></li>
-															<li><a href="#">Knowledge Access & Capacity Building</a>
-															</li>
-														</ul>
-													</li>
-
-													<li><a href="programs.html">Programs & Initiatives </a></li>
+													<li ><a href="index.html">Home</a></li>
+													<li> <a href="aboutcharaka.html">About Us</a></li>
+													<li  class="active"><a href="programs.html">Programs & Initiatives </a></li>
 													<li><a href="#">Partners</a></li>
 													<li><a href="#">News & Updates</a></li>
 													<li><a href="contactus.html">Contact Us</a></li>
@@ -204,7 +208,7 @@
 								</div>
 							</div>
 							<div class="pbmit-right-box d-flex align-items-center">
-								<div class="header-contact-search">
+								<div class="header-contact-search pt-2 pb-2">
 									<div class="pbmit-ihbox-style-6">
 										<div class="pbmit-ihbox-box">
 											<div class="pbmit-ihbox-icon">
@@ -225,18 +229,17 @@
 													</svg>
 												</div>
 											</div>
-											<div class="pbmit-ihbox-contents">
+											<div class="pbmit-ihbox-contents pt-2 pb-2">
 												<h2 class="pbmit-element-title">
-													<a href="tel:(000)123456789">
-														<span class="pbmit-button-text">(000)123456789</span>
+													<a href="tel:9066798311">
+														<span class="pbmit-button-text">9066798311</span>
 													</a>
 												</h2>
 											</div>
-											<a class="pbmit-link" href="tel:(000)123456789"
-												title="Go to (000)123456789"></a>
+											<a class="pbmit-link" href="tel:9066798311" title="Go to 9066798311"></a>
 										</div>
 									</div>
-									<div class="pbmit-search-wrapper">
+									<!-- <div class="pbmit-search-wrapper">
 										<div class="pbmit-search-form-wrapper">
 											<form>
 												<div class="pbmit-search-wrap">
@@ -252,7 +255,7 @@
 												<i class="pbmit-base-icon-search-1"></i>
 											</a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 								<!-- <div class="pbmit-button-box-second">
 									<a href="contact-us.html" class="pbmit-btn">
@@ -318,7 +321,7 @@
 					<div class="row">
 
 						<!-- Sidebar -->
-						<div class="col-md-3 service-left-col sidebar">
+						<div class="col-md-3 service-left-col sidebar mb-3">
 							<aside class="service-sidebar">
 
 								<!-- Sidebar Tabs -->
@@ -330,17 +333,17 @@
 
 										<button class="nav-link active mb-2" id="tab1-tab" data-bs-toggle="pill"
 											data-bs-target="#tab1" type="button" role="tab">
-											CHARAKA Startup Support Platform 
+											CHARAKA Startup Support Platform (Planned) 
 										</button>
 
 										<button class="nav-link mb-2" id="tab2-tab" data-bs-toggle="pill"
 											data-bs-target="#tab2" type="button" role="tab">
-											Clinical Validation Network
+											Clinical Validation Network (Planned) 
 										</button>
 
 										<button class="nav-link mb-2" id="tab3-tab" data-bs-toggle="pill"
 											data-bs-target="#tab3" type="button" role="tab">
-											Government Sandbox & Testbeds
+											Government Sandbox & Testbeds (Planned) 
 										</button>
 
 										<button class="nav-link mb-2" id="tab4-tab" data-bs-toggle="pill"
@@ -350,7 +353,7 @@
 
 										<button class="nav-link mb-2" id="tab5-tab" data-bs-toggle="pill"
 											data-bs-target="#tab5" type="button" role="tab">
-											Fellowships & Talent Development
+											Fellowships & Talent Development (Upcoming) 
 										</button>
 
 									</div>
@@ -358,11 +361,11 @@
 
 								<!-- CTA -->
 								<aside class="widget text-center startup-cta-widget">
-									<h2 class="widget-title">Register Your Startup Interest</h2>
+									<h2 class="widget-title">Register Now</h2>
 
 									<div class="mt-3">
 										<a href="#" class="startup-interest-btn">
-											Register Interest
+										Register Your Startup Interest
 										</a>
 									</div>
 								</aside>
@@ -371,7 +374,7 @@
 						</div>
 
 						<!-- Right Content -->
-						<div class="col-md-9 service-right-col">
+						<div class="col-md-9 service-right-col ">
 							<div class="tab-content" id="serviceTabsContent">
 
 								<!-- TAB 1 -->
@@ -1266,12 +1269,12 @@
 							<aside class="widget">
 								<h2 class="widget-title">Menu</h2>
 								<ul class="menu">
-									<li><a href="">Home</a></li>
+									<li><a href="index.html">Home</a></li>
 									<!-- <li><a href="">About Us</a></li> -->
 									<li><a href="programs.html">Programs & <br> Initiatives</a></li>
 									<!-- <li><a href="">Partners</a></li> -->
 									<li><a href="">News & Updates</a></li>
-									<li><a href="">Contact Us</a></li>
+									<li><a href="contactus.html">Contact Us</a></li>
 								</ul>
 							</aside>
 						</div>
@@ -1279,7 +1282,7 @@
 							<aside class="widget">
 								<h2 class="widget-title">Company</h2>
 								<ul class="menu">
-									<li><a href="">About Us</a></li>
+									<li><a href="aboutcharaka.html">About Us</a></li>
 									<li><a href="">Partners</a></li>
 									<!-- <li><a href="contact-us.html">Contact Us</a></li> -->
 									<!-- <li><a href="">Our History</a></li> -->
@@ -1293,7 +1296,7 @@
 									<li class="pbmit-list-item">
 										<span class="pbmit-list-item-inner">
 											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="tel:+91%20236-895-4732">+91 236-895-4732</a>
+												href="tel:+9066798311">9066798311</a>
 										</span>
 									</li>
 									<li class="pbmit-list-item">
@@ -1333,7 +1336,7 @@
 								<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
 							</div>
 							<div class="col-md-6 text-md-end text-center">
-								<span>Designed & Developed by McWare Technologies </span>
+								<span>Designed & Developed by Micro Webs </span>
 							</div>
 						</div>
 					</div>

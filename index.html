@@ -51,7 +51,7 @@
 			color: var(--pbmit-white-color);
 		}
 
-	.slider-bg-cover {
+		.slider-bg-cover {
 			background: url("images/website/slider-bg-cover.png") center center / cover no-repeat !important;
 			position: absolute !important;
 			display: block !important;
@@ -64,6 +64,10 @@
 
 		.pbmit-portfolio-style-2.pbmit-active .pbminfotech-post-content {
 			height: 365px;
+		}
+		.pbmit-client-style-1 .pbmit-client-content {
+			    padding: 30px 30px;
+				height: 90px;
 		}
 	</style>
 </head>
@@ -84,9 +88,10 @@
 								<div class="pbmit-logo-area col-md-1 col-4">
 									<div class="site-branding ">
 										<h1 class="site-title ">
-											<a href="index.html">
+											<a href="index.html" class="d-flex flex-row align-items-center">
 												<img class="pbmit-main-logo img-fluid"
 													src="images/website/website/charaka-logo.png" width="55%" alt="">
+												<span>CHARAKA</span>
 											</a>
 										</h1>
 									</div>
@@ -99,20 +104,7 @@
 												<ul class="navigation clearfix" id="pbmit-top-menu">
 
 													<li class="active"><a href="index.html">Home</a></li>
-													<li class="dropdown">
-														<a href="#">About Us <i
-																class="fa fa-chevron-down fw-bold"></i></a>
-														<ul class="sub-menu">
-															<li><a href="#">Why This Matters</a></li>
-															<li><a href="#">Assistive Technology</a></li>
-															<li><a href="#">AI & Digital Health</a></li>
-															<li><a href="#">Translational Research</a></li>
-															<li><a href="#">Public Health Innovation</a></li>
-															<li><a href="#">Knowledge Access & Capacity Building</a>
-															</li>
-														</ul>
-													</li>
-												
+													<li><a href="aboutcharaka.html">About Us</a></li>
 													<li><a href="programs.html">Programs & Initiatives </a></li>
 													<li><a href="#">Partners</a></li>
 													<li><a href="#">News & Updates</a></li>
@@ -124,7 +116,7 @@
 								</div>
 							</div>
 							<div class="pbmit-right-box d-flex align-items-center">
-								<div class="header-contact-search">
+								<div class="header-contact-search pt-2 pb-2">
 									<div class="pbmit-ihbox-style-6">
 										<div class="pbmit-ihbox-box">
 											<div class="pbmit-ihbox-icon">
@@ -145,18 +137,17 @@
 													</svg>
 												</div>
 											</div>
-											<div class="pbmit-ihbox-contents">
+											<div class="pbmit-ihbox-contents pt-2 pb-2">
 												<h2 class="pbmit-element-title">
-													<a href="tel:(000)123456789">
-														<span class="pbmit-button-text">(000)123456789</span>
+													<a href="tel:9066798311">
+														<span class="pbmit-button-text">9066798311</span>
 													</a>
 												</h2>
 											</div>
-											<a class="pbmit-link" href="tel:(000)123456789"
-												title="Go to (000)123456789"></a>
+											<a class="pbmit-link" href="tel:9066798311" title="Go to 9066798311"></a>
 										</div>
 									</div>
-									<div class="pbmit-search-wrapper">
+									<!-- <div class="pbmit-search-wrapper">
 										<div class="pbmit-search-form-wrapper">
 											<form>
 												<div class="pbmit-search-wrap">
@@ -172,7 +163,7 @@
 												<i class="pbmit-base-icon-search-1"></i>
 											</a>
 										</div>
-									</div>
+									</div> -->
 								</div>
 								<!-- <div class="pbmit-button-box-second">
 									<a href="contact-us.html" class="pbmit-btn">
@@ -211,20 +202,23 @@
 								<div class="container">
 									<div class="pbmit-slider-content">
 										<h1 class="pbmit-slider-title transform-left transform-delay-1"><span
-												class="pbmit-global-color">CHARAKA </span> <br> Building India’s Future
-											<br> Health
-											Innovation Engine.
+												class="pbmit-global-color"> Building India’s Future
+												<br> Health
+												Innovation Engine.</span>
 										</h1>
 										<div class="d-flex align-items-center justify-content-between">
-											<div class="pbmit-slider-desc transform-bottom transform-delay-2">is
+											<div class="pbmit-slider-desc transform-bottom transform-delay-2">
+												CHARAKA (Centre of Excellence in HealthTech & MedTech, <br>
+												AssistiveTech, Translational Research, Adoption and Knowledge
+												Access)<br>is
 												designed to enable
 												translation from clinical need to real-world impact.<br> It is anchored
 												under the
 												Department of Electronics, IT, Biotechnology <br> and Science &
 												Technology</div>
 											<div class="transform-bottom transform-delay-3">
-												<a class="pbmit-slider-btn" href="services.html">Explore Our<br>
-													Research <i class="pbmit-base-icon-plus"></i></a>
+												<a class="pbmit-slider-btn">Partner with<br>
+													Us <i class="pbmit-base-icon-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -271,26 +265,20 @@
 													<div class="pbminfotech-ele-fid-style-2">
 														<div class="pbmit-fld-contents">
 															<div class="pbmit-contents-box">
-																<h1 class="pbmit-fid-counter">
-																	<span class="pbmit-fid-before"></span>
-																	<span class="pbmit-number-rotate numinate"
-																		data-appear-animation="animateDigits"
-																		data-from="0" data-to="25" data-interval="3"
-																		data-before="" data-before-style=""
-																		data-after="" data-after-style="">25</span>
-																	<span class="pbmit-fid"><span>+</span></span>
-																</h1>
-																<span class="pbmit-fid-title">Years of<br>
-																	Experience</span>
+																<h5 class="pbmit-fid-counter fs-5">
+																	What CHARAKA will enable
+																</h5>
+																<!-- <span class="pbmit-fid-title">Years of<br>
+																	Experience</span> -->
 															</div>
 														</div>
 													</div>
 												</div>
 												<div class="ihbox-style-4-wrap">
 													<div class="pbmit-ihbox-style-4">
-														<div class="pbmit-ihbox-box">
+														<div class="pbmit-ihbox-box gap-0">
 															<div class="pbmit-icon-wrap">
-																<div class="pbmit-ihbox-icon">
+																<!-- <div class="pbmit-ihbox-icon">
 																	<div
 																		class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
 																		<svg height="512" viewBox="0 0 74 74"
@@ -332,13 +320,27 @@
 																			</path>
 																		</svg>
 																	</div>
-																</div>
-																<h2 class="pbmit-element-title">Call us <br>24/7</h2>
+																</div> -->
+																<!-- <h2 class="pbmit-element-title">Call us <br>24/7</h2> -->
 															</div>
 															<div class="pbmit-ihbox-contents">
-																<div class="pbmit-heading-desc">Certified and
-																	accredited, trusted by thousands of patients and
-																	organizations.</div>
+																<div class="pbmit-heading-desc">
+																	<ul
+																		style="list-style-type: disc; padding-left: 20px;">
+																		<li>Innovation from problem identification to deployment</li>
+																		<li>Access to shared labs and testing facilities (planned)</li>
+																		<li>Clinical validation networks (being established)</li>
+																		<li>Pathways for government pilots and scale</li>
+																	</ul>
+																</div>
+																<a href="aboutcharaka.html" class="pbmit-btn mt-3">
+													<span class="pbmit-button-content-wrapper">
+														<span class="pbmit-button-text">Explore Vision</span>
+														<span class="pbmit-button-icon">
+															<i class="pbmit-labozen-icon pbmit-labozen-icon-plus"></i>
+														</span>
+													</span>
+												</a>
 															</div>
 														</div>
 													</div>
@@ -347,14 +349,13 @@
 										</div>
 										<div class="col-md-7">
 											<div class="right-box">
-												<div class="mb-4 pb-3">It is anchored under the Department of
-													Electronics, IT,
-													Biotechnology and Science & Technology. Currently in its
-													foundational phase,
-													CHARAKA invites partners, innovators, and institutions to co-create
-													this
-													ecosystem.</div>
-												<a href="about-us.html" class="pbmit-btn">
+												<div class="mb-4 pb-3">CHARAKA is a Government of Karnataka initiative
+													being established as a translational platform for healthcare
+													innovation.<br>
+													It will bring together clinicians, engineers, researchers, startups,
+													and policymakers to accelerate the journey from idea to adoption.
+												</div>
+												<a href="aboutcharaka.html" class="pbmit-btn">
 													<span class="pbmit-button-content-wrapper">
 														<span class="pbmit-button-text">Know More</span>
 														<span class="pbmit-button-icon">
@@ -392,8 +393,7 @@
 								</div>
 							</div>
 							<div class="col-md-5 full-width-1200 animated animation-delay-200 animation fadeInUp">
-								<img src="images/website/about-img-01.jpg"
-									class="img-fluid rounded-7" alt="">
+								<img src="images/website/aboutusimage.jpeg" class="img-fluid rounded-7" alt="">
 							</div>
 						</div>
 					</div>
@@ -419,8 +419,8 @@
 											</svg>
 										</div>
 									</div>
-									<h2 class="pbmit-element-title" data-text="Electronics">
-										Electronics
+									<h2 class="pbmit-element-title" data-text="HealthTech & MedTech">
+									HealthTech & MedTech
 									</h2>
 								</div>
 							</article>
@@ -437,8 +437,8 @@
 											</svg>
 										</div>
 									</div>
-									<h2 class="pbmit-element-title" data-text="IT">
-										IT
+									<h2 class="pbmit-element-title" data-text="Assistive Technology">
+										Assistive Technology
 									</h2>
 								</div>
 							</article>
@@ -455,8 +455,8 @@
 											</svg>
 										</div>
 									</div>
-									<h2 class="pbmit-element-title" data-text="Biotechnology">
-										Biotechnology
+									<h2 class="pbmit-element-title" data-text="AI & Digital Health">
+										AI & Digital Health
 									</h2>
 								</div>
 							</article>
@@ -471,10 +471,10 @@
 				<div class="container position-relative">
 					<div class="pbmit-heading-subheading style-2 animation-style3">
 						<div class="pbmit-hs-left">
-							<h2 class="pbmit-subtitle">Key Focus Areas</h2>
+							<h2 class="pbmit-subtitle">CHARAKA</h2>
 						</div>
 						<div class="pbmit-hs-right">
-							<h2 class="pbmit-title">What CHARAKA will enable</h2>
+							<h2 class="pbmit-title">Focus Areas</h2>
 						</div>
 					</div>
 					<div class="service-arrow"></div>
@@ -626,7 +626,7 @@
 									<div class="pbmit-content-box">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
-												<a href="#">Best Cluste</a>
+												<a href="#">Knowledge and Capacity Building</a>
 											</h3>
 											<!-- <div class="pbmit-serv-cat">
 												<a href="services.html" rel="tag">Genomics</a>
@@ -647,87 +647,7 @@
 									</div>
 								</div>
 							</article>
-							<!-- Slide7 -->
-							<article class="pbmit-service-style-1 swiper-slide">
-								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
-										<div class="pbmit-content-wrap">
-											<h3 class="pbmit-service-title">
-												<a href="#">IKP Eden</a>
-											</h3>
-											<!-- <div class="pbmit-serv-cat">
-												<a href="services.html" rel="tag">Microbiology</a>
-											</div> -->
-										</div>
-									</div>
-									<div class="pbmit-image-box">
-										<div class="pbmit-hover-wrap">
-											<div class="pbmit-featured-img-wrapper">
-												<div class="pbmit-featured-wrapper">
-													<img src="images/website/website/AI & Digital Healthhtml.png"
-														class="" alt="">
-												</div>
-											</div>
-											<a class="pbmit-link" href="#" title="Go to Diagnostic Testing"></a>
-										</div>
-										<div class="pbmit-image-wrap"></div>
-									</div>
-								</div>
-							</article>
-							<!-- Slide8 -->
-							<article class="pbmit-service-style-1 swiper-slide">
-								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
-										<div class="pbmit-content-wrap">
-											<h3 class="pbmit-service-title">
-												<a href="#">Stanford BioDesign</a>
-											</h3>
-											<!-- <div class="pbmit-serv-cat">
-												<a href="services.html" rel="tag">Hematology</a>
-											</div> -->
-										</div>
-									</div>
-									<div class="pbmit-image-box">
-										<div class="pbmit-hover-wrap">
-											<div class="pbmit-featured-img-wrapper">
-												<div class="pbmit-featured-wrapper">
-													<img src="images/website/website/AI & Digital Healthhtml.png"
-														class="" alt="">
-												</div>
-											</div>
-											<a class="pbmit-link" href="#" title="Go to Pathology Testing"></a>
-										</div>
-										<div class="pbmit-image-wrap"></div>
-									</div>
-								</div>
-							</article>
-							<!-- Slide9 -->
-							<article class="pbmit-service-style-1 swiper-slide">
-								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
-										<div class="pbmit-content-wrap">
-											<h3 class="pbmit-service-title">
-												<a href="#">Chemical Research</a>
-											</h3>
-											<!-- <div class="pbmit-serv-cat">
-												<a href="services.html" rel="tag">Chemistry</a>
-											</div> -->
-										</div>
-									</div>
-									<div class="pbmit-image-box">
-										<div class="pbmit-hover-wrap">
-											<div class="pbmit-featured-img-wrapper">
-												<div class="pbmit-featured-wrapper">
-													<img src="images/website/website/AI & Digital Healthhtml.png"
-														class="" alt="">
-												</div>
-											</div>
-											<a class="pbmit-link" href="#" title="Go to Chemical Research"></a>
-										</div>
-										<div class="pbmit-image-wrap"></div>
-									</div>
-								</div>
-							</article>
+							
 						</div>
 					</div>
 				</div>
@@ -746,13 +666,12 @@
 								</div>
 								<div class="pbmit-heading-subheading animation-style3">
 									<h2 class="pbmit-subtitle">About Us</h2>
-									<h2 class="pbmit-title">CHARAKA is a Government of Karnataka initiative being
-										established as...</h2>
+									<h2 class="pbmit-title">Be Part of the CHARAKA Ecosystem</h2>
 								</div>
 								<div class="d-flex flex-column align-items-start">
-									<a href="" class="pbmit-btn">
+									<a href="#" class="pbmit-btn">
 										<span class="pbmit-button-content-wrapper">
-											<span class="pbmit-button-text">Know More</span>
+											<span class="pbmit-button-text">Collaborate With Us</span>
 											<span class="pbmit-button-icon">
 												<i class="pbmit-labozen-icon pbmit-labozen-icon-plus"></i>
 											</span>
@@ -1017,16 +936,15 @@
 												</div>
 												<div class="pbmit-ihbox-contents">
 													<h2 class="pbmit-element-title">
-														Focus Areas
+														CHARAKA is actively engaging with:
 													</h2>
 													<div class="pbmit-heading-desc">
 														<ul style="list-style-type: disc; padding-left: 20px;">
-															<li>HealthTech & MedTech</li>
-															<li>Assistive Technology</li>
-															<li>AI & Digital Health</li>
-															<li>Translational Research</li>
-															<li>Public Health Innovation</li>
-															<li>Knowledge & Capacity Building</li>
+															<li>Startups & innovators</li>
+															<li>Hospitals & clinicians</li>
+															<li>Academic institutions</li>
+															<li>Industry & manufacturers</li>
+															<li>CSR & funding partners</li>
 														</ul>
 													</div>
 												</div>
@@ -1080,6 +998,7 @@
 													<h2 class="pbmit-element-title">
 														Where are we now?
 													</h2>
+													<P class="text-white">CHARAKA is currently in its setup and <br> ecosystem-building phase, with focus on:</P>
 													<div class="pbmit-heading-desc">
 														<ul style="list-style-type: disc; padding-left: 20px;">
 															<li>Institutional partnerships</li>
@@ -1212,18 +1131,18 @@
 								<div class="pbminfotech-post-content">
 									<div class="pbmit-box-content">
 										<h3 class="pbmit-portfolio-title">
-											<a href="portfolio-detail-style-1.html">Key Gaps Being Addressed</a>
+											<a href="#">Key Gaps Being Addressed</a>
 										</h3>
 										<div class="pbmit-port-cat">
-											<a href="#" rel="tag">AI </a>
+											<a href="#" rel="tag">AI </a#>
 											<a href="" rel="tag">MedTech</a>
 										</div>
 										<div class="pbmit-btn-wrap"></div>
 									</div>
 									<div class="pbmit-content-wrap">
-										<div class="pbmit-portfolio-desc d-flex flex-column gap-1">
+										<!-- <div class="pbmit-portfolio-desc d-flex flex-column gap-1">
 											<p>What CHARAKA will enable</p>
-										</div>
+										</div> -->
 										<div class="pbmit-image-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
@@ -1237,8 +1156,7 @@
 													</ul>
 												</div>
 											</div>
-											<a class="pbmit-link" href="#"
-												title="Go to Organic Synthesis"></a>
+											<a class="pbmit-link" href="#" title="Go to Organic Synthesis"></a>
 										</div>
 									</div>
 								</div>
@@ -1256,9 +1174,9 @@
 										<div class="pbmit-btn-wrap"></div>
 									</div>
 									<div class="pbmit-content-wrap">
-										<div class="pbmit-portfolio-desc">
+										<!-- <div class="pbmit-portfolio-desc">
 											<p>What CHARAKA will enable </p>
-										</div>
+										</div> -->
 										<div class="pbmit-image-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
@@ -1272,8 +1190,7 @@
 													</ul>
 												</div>
 											</div>
-											<a class="pbmit-link" href="#"
-												title="Go to Cosmetic Testing"></a>
+											<a class="pbmit-link" href="#" title="Go to Cosmetic Testing"></a>
 										</div>
 									</div>
 								</div>
@@ -1290,9 +1207,9 @@
 										<div class="pbmit-btn-wrap"></div>
 									</div>
 									<div class="pbmit-content-wrap">
-										<div class="pbmit-portfolio-desc">
+										<!-- <div class="pbmit-portfolio-desc">
 											<p>What CHARAKA will enable</p>
-										</div>
+										</div> -->
 										<div class="pbmit-image-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
@@ -1305,13 +1222,12 @@
 													</ul>
 												</div>
 											</div>
-											<a class="pbmit-link" href="#"
-												title="Go to Surface Cleaning"></a>
+											<a class="pbmit-link" href="#" title="Go to Surface Cleaning"></a>
 										</div>
 									</div>
 								</div>
 							</article>
-							
+
 						</div>
 					</div>
 				</div>
@@ -1349,11 +1265,13 @@
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-01.png" alt="">
+											<!-- <img src="images/client/client-hover-01.png" alt=""> -->
+											 <p class="text-dark mb-0"><b>Department of IT & BT Govt of Karnataka</b></p>
 										</div>
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-01.png" class="img-fluid" alt="">
+												 <p class="text-dark mb-0"><b>Department of IT & BT Govt of Karnataka</b></p>
+												<!-- <img src="images/client/client-01.png" class="img-fluid" alt=""> -->
 											</div>
 										</div>
 									</div>
@@ -1364,11 +1282,13 @@
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-02.png" alt="">
+											<!-- <img src="images/client/client-hover-02.png" alt=""> -->
+											  <p class="text-dark mb-0"><b>KITS</b></p>
 										</div>
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-02.png" class="img-fluid" alt="">
+												<!-- <img src="images/client/client-02.png" class="img-fluid" alt=""> -->
+												  <p class="text-dark mb-0"><b>KITS</b></p>
 											</div>
 										</div>
 									</div>
@@ -1379,11 +1299,13 @@
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-03.png" alt="">
+											<!-- <img src="images/client/client-hover-03.png" alt=""> -->
+											  <p class="text-dark mb-0"><b>Innovate Karnataka</b></p>
 										</div>
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-03.png" class="img-fluid" alt="">
+												<!-- <img src="images/client/client-03.png" class="img-fluid" alt=""> -->
+												  <p class="text-dark mb-0"><b>Innovate Karnataka</b></p>
 											</div>
 										</div>
 									</div>
@@ -1394,11 +1316,13 @@
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-04.png" alt="">
+											<!-- <img src="images/client/client-hover-04.png" alt=""> -->
+											  <p class="text-dark mb-0"><b>Startup Karnataka</b></p>
 										</div>
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-04.png" class="img-fluid" alt="">
+												<!-- <img src="images/client/client-04.png" class="img-fluid" alt=""> -->
+												  <p class="text-dark mb-0"><b>Startup Karnatakaa</b></p>
 											</div>
 										</div>
 									</div>
@@ -1409,11 +1333,13 @@
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-05.png" alt="">
+											<!-- <img src="images/client/client-hover-05.png" alt=""> -->
+											  <p class="text-dark mb-0"><b>Artpark</b></p>
 										</div>
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-05.png" class="img-fluid" alt="">
+												<!-- <img src="images/client/client-05.png" class="img-fluid" alt=""> -->
+												  <p class="text-dark mb-0"><b>Artpark</b></p>
 											</div>
 										</div>
 									</div>
@@ -1424,46 +1350,19 @@
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-06.png" alt="">
+											<!-- <img src="images/client/client-hover-06.png" alt=""> -->
+											  <p class="text-dark mb-0"><b>BeST Cluster</b></p>
 										</div>
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-06.png" class="img-fluid" alt="">
+												<!-- <img src="images/client/client-06.png" class="img-fluid" alt=""> -->
+												  <p class="text-dark mb-0"><b>BeST Cluster</b></p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</article>
-							<!-- Slide7 -->
-							<article class="pbmit-client-style-1 swiper-slide">
-								<div class="pbmit-client-content">
-									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
-										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-07.png" alt="">
-										</div>
-										<div class="pbmit-featured-img-wrapper">
-											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-07.png" class="img-fluid" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</article>
-							<!-- Slide8 -->
-							<article class="pbmit-client-style-1 swiper-slide">
-								<div class="pbmit-client-content">
-									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
-										<div class="pbmit-client-hover-img">
-											<img src="images/client/client-hover-08.png" alt="">
-										</div>
-										<div class="pbmit-featured-img-wrapper">
-											<div class="pbmit-featured-wrapper">
-												<img src="images/client/client-08.png" class="img-fluid" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</article>
+						
 						</div>
 					</div>
 				</div>
@@ -1537,7 +1436,7 @@
 							<aside class="widget">
 								<h2 class="widget-title">Company</h2>
 								<ul class="menu">
-									<li><a href="">About Us</a></li>
+									<li><a href="aboutcharaka.html">About Us</a></li>
 									<li><a href="">Partners</a></li>
 									<!-- <li><a href="contact-us.html">Contact Us</a></li> -->
 									<!-- <li><a href="">Our History</a></li> -->
@@ -1551,7 +1450,7 @@
 									<li class="pbmit-list-item">
 										<span class="pbmit-list-item-inner">
 											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="tel:+91%20236-895-4732">+91 236-895-4732</a>
+												href="tel:+9066798311">9066798311</a>
 										</span>
 									</li>
 									<li class="pbmit-list-item">
@@ -1591,7 +1490,7 @@
 								<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
 							</div>
 							<div class="col-md-6 text-md-end text-center">
-								<span>Designed & Developed by McWare Technologies </span>
+								<span>Designed & Developed by Micro Webs </span>
 							</div>
 						</div>
 					</div>

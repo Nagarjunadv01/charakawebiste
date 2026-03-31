@@ -1,0 +1,225 @@
+$pbmit_labozen-font: "pbmit_labozen";
+
+@font-face {
+    font-family: $pbmit_labozen-font;
+    src: url("../pbmit-labozen-icon/pbmit_labozen.woff2?aac3b12e0db90c1b63f341395e35c086") format("woff2"),
+url("../pbmit-labozen-icon/pbmit_labozen.woff?aac3b12e0db90c1b63f341395e35c086") format("woff"),
+url("../pbmit-labozen-icon/pbmit_labozen.eot?aac3b12e0db90c1b63f341395e35c086#iefix") format("embedded-opentype"),
+url("../pbmit-labozen-icon/pbmit_labozen.ttf?aac3b12e0db90c1b63f341395e35c086") format("truetype"),
+url("../pbmit-labozen-icon/pbmit_labozen.svg?aac3b12e0db90c1b63f341395e35c086#pbmit_labozen") format("svg");
+}
+
+i[class^="pbmit-labozen-"]:before, i[class*=" pbmit-labozen-icon-"]:before {
+    font-family: pbmit_labozen !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$pbmit_labozen-map: (
+    "scientist": "\f101",
+    "microscope": "\f102",
+    "graduation-cap": "\f103",
+    "loupe": "\f104",
+    "dna": "\f105",
+    "microscope-slides": "\f106",
+    "petri-dish": "\f107",
+    "bacteria": "\f108",
+    "danger": "\f109",
+    "thermometer": "\f10a",
+    "speedometer": "\f10b",
+    "magnet": "\f10c",
+    "flask": "\f10d",
+    "syringe": "\f10e",
+    "safety-glasses": "\f10f",
+    "scale": "\f110",
+    "filter": "\f111",
+    "drug": "\f112",
+    "book": "\f113",
+    "medical-mask": "\f114",
+    "atom": "\f115",
+    "id-card": "\f116",
+    "clipboard": "\f117",
+    "pendulum": "\f118",
+    "nuclear": "\f119",
+    "mortar": "\f11a",
+    "laptop": "\f11b",
+    "pipette": "\f11c",
+    "scalpel": "\f11d",
+    "test-tube": "\f11e",
+    "folder": "\f11f",
+    "star-of-life": "\f120",
+    "play-button": "\f121",
+    "left": "\f122",
+    "plus": "\f123",
+    "location": "\f124",
+    "mail": "\f125",
+    "call": "\f126",
+    "telephone": "\f127",
+    "safety-goggles": "\f128",
+    "flask-beaker": "\f129",
+    "chemical": "\f12a",
+    "lab": "\f12b",
+    "lab-1": "\f12c",
+    "lab-2": "\f12d",
+    "atom-1": "\f12e",
+    "respirator": "\f12f",
+    "nuclear-1": "\f130",
+    "dna-strand": "\f131",
+    "badge": "\f132",
+);
+
+.pbmit-labozen-icon-scientist:before {
+    content: map-get($pbmit_labozen-map, "scientist");
+}
+.pbmit-labozen-icon-microscope:before {
+    content: map-get($pbmit_labozen-map, "microscope");
+}
+.pbmit-labozen-icon-graduation-cap:before {
+    content: map-get($pbmit_labozen-map, "graduation-cap");
+}
+.pbmit-labozen-icon-loupe:before {
+    content: map-get($pbmit_labozen-map, "loupe");
+}
+.pbmit-labozen-icon-dna:before {
+    content: map-get($pbmit_labozen-map, "dna");
+}
+.pbmit-labozen-icon-microscope-slides:before {
+    content: map-get($pbmit_labozen-map, "microscope-slides");
+}
+.pbmit-labozen-icon-petri-dish:before {
+    content: map-get($pbmit_labozen-map, "petri-dish");
+}
+.pbmit-labozen-icon-bacteria:before {
+    content: map-get($pbmit_labozen-map, "bacteria");
+}
+.pbmit-labozen-icon-danger:before {
+    content: map-get($pbmit_labozen-map, "danger");
+}
+.pbmit-labozen-icon-thermometer:before {
+    content: map-get($pbmit_labozen-map, "thermometer");
+}
+.pbmit-labozen-icon-speedometer:before {
+    content: map-get($pbmit_labozen-map, "speedometer");
+}
+.pbmit-labozen-icon-magnet:before {
+    content: map-get($pbmit_labozen-map, "magnet");
+}
+.pbmit-labozen-icon-flask:before {
+    content: map-get($pbmit_labozen-map, "flask");
+}
+.pbmit-labozen-icon-syringe:before {
+    content: map-get($pbmit_labozen-map, "syringe");
+}
+.pbmit-labozen-icon-safety-glasses:before {
+    content: map-get($pbmit_labozen-map, "safety-glasses");
+}
+.pbmit-labozen-icon-scale:before {
+    content: map-get($pbmit_labozen-map, "scale");
+}
+.pbmit-labozen-icon-filter:before {
+    content: map-get($pbmit_labozen-map, "filter");
+}
+.pbmit-labozen-icon-drug:before {
+    content: map-get($pbmit_labozen-map, "drug");
+}
+.pbmit-labozen-icon-book:before {
+    content: map-get($pbmit_labozen-map, "book");
+}
+.pbmit-labozen-icon-medical-mask:before {
+    content: map-get($pbmit_labozen-map, "medical-mask");
+}
+.pbmit-labozen-icon-atom:before {
+    content: map-get($pbmit_labozen-map, "atom");
+}
+.pbmit-labozen-icon-id-card:before {
+    content: map-get($pbmit_labozen-map, "id-card");
+}
+.pbmit-labozen-icon-clipboard:before {
+    content: map-get($pbmit_labozen-map, "clipboard");
+}
+.pbmit-labozen-icon-pendulum:before {
+    content: map-get($pbmit_labozen-map, "pendulum");
+}
+.pbmit-labozen-icon-nuclear:before {
+    content: map-get($pbmit_labozen-map, "nuclear");
+}
+.pbmit-labozen-icon-mortar:before {
+    content: map-get($pbmit_labozen-map, "mortar");
+}
+.pbmit-labozen-icon-laptop:before {
+    content: map-get($pbmit_labozen-map, "laptop");
+}
+.pbmit-labozen-icon-pipette:before {
+    content: map-get($pbmit_labozen-map, "pipette");
+}
+.pbmit-labozen-icon-scalpel:before {
+    content: map-get($pbmit_labozen-map, "scalpel");
+}
+.pbmit-labozen-icon-test-tube:before {
+    content: map-get($pbmit_labozen-map, "test-tube");
+}
+.pbmit-labozen-icon-folder:before {
+    content: map-get($pbmit_labozen-map, "folder");
+}
+.pbmit-labozen-icon-star-of-life:before {
+    content: map-get($pbmit_labozen-map, "star-of-life");
+}
+.pbmit-labozen-icon-play-button:before {
+    content: map-get($pbmit_labozen-map, "play-button");
+}
+.pbmit-labozen-icon-left:before {
+    content: map-get($pbmit_labozen-map, "left");
+}
+.pbmit-labozen-icon-plus:before {
+    content: map-get($pbmit_labozen-map, "plus");
+}
+.pbmit-labozen-icon-location:before {
+    content: map-get($pbmit_labozen-map, "location");
+}
+.pbmit-labozen-icon-mail:before {
+    content: map-get($pbmit_labozen-map, "mail");
+}
+.pbmit-labozen-icon-call:before {
+    content: map-get($pbmit_labozen-map, "call");
+}
+.pbmit-labozen-icon-telephone:before {
+    content: map-get($pbmit_labozen-map, "telephone");
+}
+.pbmit-labozen-icon-safety-goggles:before {
+    content: map-get($pbmit_labozen-map, "safety-goggles");
+}
+.pbmit-labozen-icon-flask-beaker:before {
+    content: map-get($pbmit_labozen-map, "flask-beaker");
+}
+.pbmit-labozen-icon-chemical:before {
+    content: map-get($pbmit_labozen-map, "chemical");
+}
+.pbmit-labozen-icon-lab:before {
+    content: map-get($pbmit_labozen-map, "lab");
+}
+.pbmit-labozen-icon-lab-1:before {
+    content: map-get($pbmit_labozen-map, "lab-1");
+}
+.pbmit-labozen-icon-lab-2:before {
+    content: map-get($pbmit_labozen-map, "lab-2");
+}
+.pbmit-labozen-icon-atom-1:before {
+    content: map-get($pbmit_labozen-map, "atom-1");
+}
+.pbmit-labozen-icon-respirator:before {
+    content: map-get($pbmit_labozen-map, "respirator");
+}
+.pbmit-labozen-icon-nuclear-1:before {
+    content: map-get($pbmit_labozen-map, "nuclear-1");
+}
+.pbmit-labozen-icon-dna-strand:before {
+    content: map-get($pbmit_labozen-map, "dna-strand");
+}
+.pbmit-labozen-icon-badge:before {
+    content: map-get($pbmit_labozen-map, "badge");
+}

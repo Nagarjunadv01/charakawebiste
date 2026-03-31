@@ -93,6 +93,142 @@
 			display: flex;
 			align-items: center;
 		}
+		/* Main card */
+.get-involved-box {
+    overflow: hidden;
+    padding: 40px 30px;
+}
+
+/* Layout wrapper */
+.review-highlight-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Text section */
+.review-highlight {
+    flex: 1;
+    z-index: 2;
+}
+
+.review-highlight .pbmit-title {
+    font-size: 42px !important;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #29d9e5; /* optional */
+}
+
+.review-highlight .pbmit-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Image section */
+.testimonial-img-01 {
+    flex: 0 0 220px;
+    text-align: right;
+    z-index: 1;
+}
+
+.testimonial-img-01 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button spacing */
+.pbmit-ihbox-btn .pbmit-btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ---------------- MOBILE FIX ---------------- */
+@media (max-width: 991px) {
+    .review-highlight-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-img-01 {
+        flex: unset;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .testimonial-img-01 img {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    .review-highlight .pbmit-title {
+        font-size: 34px;
+    }
+
+    .review-highlight .pbmit-desc {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 767px) {
+    .get-involved-box {
+        padding: 30px 20px;
+    }
+
+    .review-highlight .pbmit-title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .review-highlight .pbmit-desc {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .testimonial-img-01 img {
+        max-width: 180px;
+    }
+
+    .pbmit-ihbox-btn .pbmit-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-highlight .pbmit-title {
+        font-size: 24px;
+    }
+
+    .review-highlight .pbmit-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .testimonial-img-01 img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .talent-contact-right .right-column {
+        margin-top: 30px;
+        height: 612px;
+		
+    }
+}
+	@media (max-width: 320px) {
+    .talent-contact-right .review-highlight .pbmit-desc {
+        color: #fff !important;
+    }
+}
 	</style>
 </head>
 
@@ -131,7 +267,6 @@
 														<a href="#">About Us <i
 																class="fa fa-chevron-down fw-bold"></i></a>
 														<ul class="sub-menu">
-															<li><a href="aboutcharaka.html">About Charaka</a></li>
 															<li><a href="#">Why This Matters</a></li>
 															<li><a href="#">Assistive Technology</a></li>
 															<li><a href="#">AI & Digital Health</a></li>
@@ -141,7 +276,7 @@
 															</li>
 														</ul>
 													</li>
-												
+
 													<li><a href="programs.html">Programs & Initiatives </a></li>
 													<li><a href="#">Partners</a></li>
 													<li><a href="#">News & Updates</a></li>
@@ -295,7 +430,7 @@
 															innovation, institutions, and implementation.
 														</div>
 														<div class="pbmit-ihbox-btn">
-															<a href="#expression-form">
+															<a href="partnership.html">
 																<span class="pbmit-button-text">Explore
 																	Partnership</span>
 															</a>
@@ -390,12 +525,11 @@
 
 									<!-- Right Highlight Section -->
 									<div
-										class="col-md-5 right-column position-relative pbmit-bg-color-blackish rounded-7">
+										class="col-md-5 right-column position-relative pbmit-bg-color-blackish rounded-7 get-involved-box">
 										<div class="review-highlight-wrap">
 											<div class="review-highlight">
 												<h2 class="pbmit-title">Get Involved</h2>
-												<p class="pbmit-desc"
-													style="font-size: 18px; line-height: 1.8; margin-top: 20px;">
+												<p class="pbmit-desc">
 													Be part of the journey of <strong>CHARAKA</strong>.<br><br>
 													Whether you are a partner, founder, researcher, or supporter —
 													there’s a meaningful way to contribute to our mission.
@@ -409,7 +543,7 @@
 												</div>
 											</div>
 
-											<div class="text-end testimonial-img-01">
+											<div class="testimonial-img-01">
 												<img src="images/website/testimonial-img-01.png" class="img-fluid"
 													alt="Get Involved">
 											</div>
@@ -450,22 +584,22 @@
 								<div class="social-links-wrap">
 									<ul class="pbmit-social-links">
 										<li class="pbmit-social-li pbmit-social-facebook">
-											<a title="Facebook" href="https://www.facebook.com/" target="_blank">
+											<a title="Facebook" href="" target="_blank">
 												<span><i class="pbmit-base-icon-facebook-logo"></i></span>
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-twitter">
-											<a title="Twitter" href="https://www.twitter.com/" target="_blank">
+											<a title="Twitter" href="" target="_blank">
 												<span><i class="pbmit-base-icon-twitter-2"></i></span>
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-instagram">
-											<a title="Instagram" href="https://www.instagram.com/" target="_blank">
+											<a title="Instagram" href="" target="_blank">
 												<span><i class="pbmit-base-icon-instagram"></i></span>
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-youtube">
-											<a title="Youtube" href="https://www.youtube.com/" target="_blank">
+											<a title="Youtube" href="" target="_blank">
 												<span><i class="pbmit-base-icon-youtube-play"></i></span>
 											</a>
 										</li>

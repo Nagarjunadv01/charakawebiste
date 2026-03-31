@@ -1568,7 +1568,7 @@ body {
         width: 100%;
 	}
 	.service-left-col{
-		order: 1;
+		/* order: 1; */
 		margin-top: 60px;
 	}
 	.pbmit-service-single{

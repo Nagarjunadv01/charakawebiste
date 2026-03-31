@@ -226,7 +226,7 @@ body{
 .testimonial-one .left-col .review-highlight .pbmit-title,
 .talent-contact-right .review-highlight .pbmit-title,
 .faq-left-col .review-highlight .pbmit-title{
-	font-size: 65px;
+	font-size: 55px;
     line-height: 96px;
 	margin-bottom: 0;
     color: var(--pbmit-secondary-color);

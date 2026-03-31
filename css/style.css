@@ -1008,6 +1008,16 @@ body{
     background-position: top right;
     background-repeat: no-repeat;
 }
+
+/* Dropdown Chevron Animation */
+.main-menu .navigation li.dropdown > a i.fa-chevron-down {
+	transition: transform 0.3s ease;
+	display: inline-block;
+}
+
+.main-menu .navigation li.dropdown:hover > a i.fa-chevron-down {
+	transform: rotate(180deg);
+}
 /** Homepage 05 **/
 .hero-banner-five-top{
 	background-image: url(../images/demo-5/left-frame.png);
@@ -2715,4 +2725,29 @@ form textarea.form-control{
 }
 .contact-form button{
 	border: none;
+}
+
+/* satvika css */
+.charaka-brand {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	text-align: center;
+}
+
+.charaka-logo {
+	height: 55px;
+	width: auto;
+	object-fit: contain;
+	display: block;
+}
+
+.charaka-text {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff; /* change to white if background is dark */
+	display: flex;
+	align-items: center;
 }

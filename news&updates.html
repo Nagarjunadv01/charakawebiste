@@ -225,15 +225,418 @@
     }
 }
 	@media (max-width: 320px) {
-    .talent-contact-right .review-highlight .pbmit-desc {
-        color: #fff !important;
-    }
-}
-.pbmit-btn{
-        color: #fff !important;
-    background-color: #e08a2e !important;
-}
-	</style>
+		.talent-contact-right .review-highlight .pbmit-desc {
+			color: #fff !important;
+		}
+	}
+	.pbmit-btn{
+		color: #fff !important;
+		background-color: #e08a2e !important;
+	}
+
+	/* News & Updates Styles */
+	.news-updates-sec {
+		padding: 80px 0;
+		/* background-color: #f8f9fa; */
+	}
+
+	/* Filter Bar */
+	.news-filter-bar {
+		background: #fff;
+		padding: 20px;
+		border-radius: 8px;
+		margin-bottom: 30px;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	}
+
+	.filter-dropdown .form-select {
+		border: 1px solid #e0e0e0;
+		border-radius: 6px;
+		padding: 10px 15px;
+		font-size: 14px;
+		background-color: #fff;
+	}
+
+	.search-box .input-group {
+		position: relative;
+	}
+
+	.search-box .form-control {
+		border: 1px solid #e0e0e0;
+		border-radius: 6px 0 0 6px;
+		padding: 10px 15px;
+		font-size: 14px;
+	}
+
+	.search-box .btn-search {
+		background: #e08a2e;
+		border: 1px solid #e08a2e;
+		border-radius: 0 6px 6px 0;
+		color: #fff;
+		padding: 10px 15px;
+	}
+
+	/* News Articles */
+	.news-articles {
+		margin-bottom: 40px;
+	}
+
+	.news-article {
+		background: #fff;
+		border-radius: 8px;
+		padding: 25px;
+		margin-bottom: 25px;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.news-article:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+	}
+
+	.article-image {
+		position: relative;
+		overflow: hidden;
+		border-radius: 6px;
+	}
+
+	.article-image img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.article-image:hover img {
+		transform: scale(1.05);
+	}
+
+	.article-category {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		padding: 5px 12px;
+		border-radius: 4px;
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	.article-category.announcement {
+		background: #28a745;
+	}
+
+	.article-category.event {
+		background: #007bff;
+	}
+
+	.article-category.urgent {
+		background: #dc3545;
+	}
+
+	.article-content {
+		padding: 0 15px;
+	}
+
+	.article-meta {
+		margin-bottom: 15px;
+		font-size: 13px;
+		color: #666;
+	}
+
+	.article-meta span {
+		margin-right: 20px;
+	}
+
+	.article-meta i {
+		margin-right: 5px;
+	}
+
+	.article-title {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 15px;
+		line-height: 1.4;
+		color: #333;
+	}
+
+	.article-title:hover {
+		color: #e08a2e;
+	}
+
+	.article-excerpt {
+		font-size: 14px;
+		line-height: 1.6;
+		color: #666;
+		margin-bottom: 20px;
+	}
+
+	.read-more-btn {
+		color: #e08a2e;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		transition: color 0.3s ease;
+	}
+
+	.read-more-btn:hover {
+		color: #d6791f;
+		text-decoration: none;
+	}
+
+	/* Pagination */
+	.news-pagination {
+		margin-top: 40px;
+	}
+
+	.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+
+	.pagination .page-link {
+		color: #666;
+		border: 1px solid #e0e0e0;
+		margin: 0 3px;
+		border-radius: 6px;
+		padding: 10px 15px;
+		min-width: 44px;
+		min-height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+	}
+
+	.pagination .page-link:hover {
+		background: #e08a2e;
+		color: #fff;
+		border-color: #e08a2e;
+		transform: translateY(-1px);
+		box-shadow: 0 2px 8px rgba(224, 138, 46, 0.3);
+	}
+
+	.pagination .page-item.active .page-link {
+		background: #e08a2e;
+		border-color: #e08a2e;
+		color: #fff;
+		font-weight: 600;
+		box-shadow: 0 2px 8px rgba(224, 138, 46, 0.3);
+	}
+
+	.pagination .page-item.disabled .page-link {
+		color: #ccc;
+		border-color: #e0e0e0;
+		background: #f8f9fa;
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+
+	.pagination .page-item.disabled .page-link:hover {
+		background: #f8f9fa;
+		color: #ccc;
+		border-color: #e0e0e0;
+		transform: none;
+		box-shadow: none;
+	}
+
+	/* Sidebar */
+	.news-sidebar {
+		position: sticky;
+		top: 20px;
+	}
+
+	.sidebar-widget {
+		background: #fff;
+		border-radius: 8px;
+		padding: 25px;
+		margin-bottom: 25px;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	}
+
+	.widget-title1 {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 20px;
+		color: #333;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #e08a2e;
+	}
+
+	/* Recent Posts */
+	.recent-post-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.recent-post-item:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.recent-post-image {
+		flex: 0 0 80px;
+		margin-right: 15px;
+	}
+
+	.recent-post-image img {
+		width: 80px;
+		height: 60px;
+		object-fit: cover;
+		border-radius: 6px;
+	}
+
+	.recent-post-content h4 {
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 5px;
+		line-height: 1.4;
+	}
+
+	.recent-post-content h4 a {
+		color: #333;
+		text-decoration: none;
+	}
+
+	.recent-post-content h4 a:hover {
+		color: #e08a2e;
+	}
+
+	.post-date {
+		font-size: 12px;
+		color: #666;
+	}
+
+	/* Popular Updates */
+	.popular-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.popular-list li {
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.popular-list li:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.popular-list li a {
+		color: #333;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 1.5;
+		transition: color 0.3s ease;
+	}
+
+	.popular-list li a:hover {
+		color: #e08a2e;
+	}
+
+	/* Archives */
+	.archives-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.archives-list li {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.archives-list li:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.archives-list li a {
+		color: #333;
+		text-decoration: none;
+		font-size: 14px;
+		transition: color 0.3s ease;
+	}
+
+	.archives-list li a:hover {
+		color: #e08a2e;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 991px) {
+		.news-updates-sec {
+			padding: 60px 0;
+		}
+		
+		.news-sidebar {
+			margin-top: 40px;
+			position: static;
+		}
+		
+		.article-content {
+			padding: 0;
+			margin-top: 20px;
+		}
+		
+		.news-article {
+			padding: 20px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.news-updates-sec {
+			padding: 40px 0;
+		}
+		
+		.news-filter-bar {
+			padding: 15px;
+		}
+		
+		.filter-dropdown,
+		.search-box {
+			margin-bottom: 15px;
+		}
+		
+		.article-image img {
+			height: 150px;
+		}
+		
+		.article-title {
+			font-size: 18px;
+		}
+		
+		.sidebar-widget {
+			padding: 20px;
+		}
+		
+		.recent-post-item {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		
+		.recent-post-image {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+</style>
 </head>
 
 <body>
@@ -279,7 +682,7 @@
 													</li>
 													<li><a href="programs.html">Programs & Initiatives </a></li>
 													<li><a href="partners.html">Partners</a></li>
-													<li class="dropdown">
+													<li class="dropdown active">
 														<a href="#">News & Updates<i
                                                                 class="fa fa-chevron-down fw-bold"></i></a>
 														<ul class="sub-menu">
@@ -288,7 +691,7 @@
 															<li><a href="#">Tenders</a></li>
 														</ul>
 													</li>
-													<li class="active"><a href="contactus.html">Contact Us</a></li>
+													<li ><a href="contactus.html">Contact Us</a></li>
 												</ul>
 											</div>
 										</nav>
@@ -383,12 +786,12 @@
 							<div class="pbmit-breadcrumb-inner">
 								<span><a title="" href="index.html" class="home"><span>Home</span></a></span>
 								<span class="sep"><i class="pbmit-base-icon-next-1"></i></span>
-								<span><span class="post-root post post-post current-item">Contact & Engage</span></span>
+								<span><span class="post-root post post-post current-item">News & Updates </span></span>
 							</div>
 						</div>
 						<div class="pbmit-tbar">
 							<div class="pbmit-tbar-inner">
-								<h1 class="pbmit-tbar-title">Contact & Engage</h1>
+								<h1 class="pbmit-tbar-title">News & Updates</h1>
 								<p class="pbmit-tbar-desc">Be part of the journey of CHARAKA.</p>
 							</div>
 						</div>
@@ -399,170 +802,214 @@
 		<!-- page content -->
 		<div class="page-content">
 
-			<!-- Get In Touch Start -->
-			<section class="section-xl talent-contact-sec">
+			<!-- News & Updates Section -->
+			<section class="section-xl news-updates-sec talent-contact-sec">
 				<div class="container">
-					<div class="pbmit-heading-subheading style-2 animation-style3">
-						<div class="pbmit-hs-left">
-							<h2 class="pbmit-subtitle">Get in touch</h2>
-						</div>
-						<!-- <div class="pbmit-hs-right">
-							<h2 class="pbmit-title">We always looking for talented peoples, so let’s work together</h2>
-						</div> -->
-					</div>
 					<div class="row">
-						<div class="col-md-3 full-width-1366"></div>
-						<div class="col-md-9 full-width-1366">
-							<div class="talent-contact-right">
-								<div class="row g-0">
-									<div class="col-md-7 left-column">
-										<div class="ihbox-style-1-wrap">
-
-											<!-- Partner with us -->
-											<div class="pbmit-ihbox-style-1">
-												<div class="pbmit-ihbox-box">
-													<div class="pbmit-ihbox-icon">
-														<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
-															<svg viewBox="0 0 24 24" width="512" height="512"
-																xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M16 11c1.657 0 3-1.567 3-3.5S17.657 4 16 4s-3 1.567-3 3.5 1.343 3.5 3 3.5zm-8 0c1.657 0 3-1.567 3-3.5S9.657 4 8 4 5 5.567 5 7.5 6.343 11 8 11zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.96 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-															</svg>
-														</div>
-													</div>
-													<div class="pbmit-ihbox-contents">
-														<h2 class="pbmit-element-title">Partner with us</h2>
-														<div class="pbmit-heading-desc">
-															Build meaningful collaborations with CHARAKA across
-															innovation, institutions, and implementation.
-														</div>
-														<!--<div class="pbmit-ihbox-btn">-->
-														<!--	<a href="partnership.html">-->
-														<!--		<span class="pbmit-button-text">Explore-->
-														<!--			Partnership</span>-->
-														<!--	</a>-->
-														<!--</div>-->
-													</div>
-												</div>
-											</div>
-
-											<!-- Startup Interest -->
-											<div class="pbmit-ihbox-style-1">
-												<div class="pbmit-ihbox-box">
-													<div class="pbmit-ihbox-icon">
-														<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
-															<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M12 2L4 10h3v8h10v-8h3L12 2zm0 3.5L15.5 9H14v7h-4V9H8.5L12 5.5z" />
-															</svg>
-														</div>
-													</div>
-													<div class="pbmit-ihbox-contents">
-														<h2 class="pbmit-element-title">Express startup interest</h2>
-														<div class="pbmit-heading-desc">
-															Are you building something bold? Tell us about your startup
-															and how you'd like to engage.
-														</div>
-														<!--<div class="pbmit-ihbox-btn">-->
-														<!--	<a href="#expression-form">-->
-														<!--		<span class="pbmit-button-text">Share Startup-->
-														<!--			Interest</span>-->
-														<!--	</a>-->
-														<!--</div>-->
-													</div>
-												</div>
-											</div>
-
-											<!-- Researcher -->
-											<div class="pbmit-ihbox-style-1">
-												<div class="pbmit-ihbox-box">
-													<div class="pbmit-ihbox-icon">
-														<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
-															<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M9 2v2h6V2h2v2h3v2H4V4h3V2h2zm11 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8h16zm-8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" />
-															</svg>
-														</div>
-													</div>
-													<div class="pbmit-ihbox-contents">
-														<h2 class="pbmit-element-title">Collaborate as researcher</h2>
-														<div class="pbmit-heading-desc">
-															Join hands in research, evidence generation,
-															interdisciplinary inquiry, and knowledge creation.
-														</div>
-														<!--<div class="pbmit-ihbox-btn">-->
-														<!--	<a href="#expression-form">-->
-														<!--		<span class="pbmit-button-text">Collaborate with-->
-														<!--			Us</span>-->
-														<!--	</a>-->
-														<!--</div>-->
-													</div>
-												</div>
-											</div>
-
-											<!-- Funder / CSR -->
-											<div class="pbmit-ihbox-style-1">
-												<div class="pbmit-ihbox-box">
-													<div class="pbmit-ihbox-icon">
-														<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
-															<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-																<path
-																	d="M12 1L3 5v6c0 5.25 3.75 10.74 9 12 5.25-1.26 9-6.75 9-12V5l-9-4zm1 17.93V13h3l-4-6-4 6h3v5.93c-3.39-.49-6-3.74-6-7.93V6.3l7-3.11 7 3.11V11c0 4.19-2.61 7.44-6 7.93z" />
-															</svg>
-														</div>
-													</div>
-													<div class="pbmit-ihbox-contents">
-														<h2 class="pbmit-element-title">Support as funder / CSR</h2>
-														<div class="pbmit-heading-desc">
-															Enable long-term impact through grants, CSR partnerships,
-															philanthropic support, and institutional backing.
-														</div>
-														<!--<div class="pbmit-ihbox-btn">-->
-														<!--	<a href="#expression-form">-->
-														<!--		<span class="pbmit-button-text">Support Our-->
-														<!--			Mission</span>-->
-														<!--	</a>-->
-														<!--</div>-->
-													</div>
-												</div>
-											</div>
-
+						<!-- Main Content Area -->
+						<div class="col-lg-8">
+							<!-- Filter Bar -->
+							<div class="news-filter-bar">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<div class="filter-dropdown">
+											<select class="form-select mb-0" >
+												<option>All Categories</option>
+												<option>Announcement</option>
+												<option>Event</option>
+												<option>Urgent Notice</option>
+											</select>
 										</div>
 									</div>
-
-									<!-- Right Highlight Section -->
-									<div
-										class="col-md-5 right-column position-relative pbmit-bg-color-blackish rounded-7 get-involved-box">
-										<div class="review-highlight-wrap">
-											<div class="review-highlight">
-												<h2 class="pbmit-title">Get Involved</h2>
-												<p class="pbmit-desc">
-													Be part of the journey of <strong>CHARAKA</strong>.<br><br>
-													Whether you are a partner, founder, researcher, or supporter —
-													there’s a meaningful way to contribute to our mission.
-												</p>
-
-												<div class="pbmit-ihbox-btn mt-4">
-													<a href="#expression-form" class="pbmit-btn">
-														<span class="pbmit-button-text">Submit Expression of
-															Interest</span>
-													</a>
-												</div>
-											</div>
-
-											<div class="testimonial-img-01">
-												<img src="images/website/testimonial-img-01.png" class="img-fluid"
-													alt="Get Involved">
+									<div class="col-md-6">
+										<div class="search-box">
+											<div class="input-group">
+												<input type="text" class="form-control mb-0" placeholder="Search news...">
+												<button class="btn btn-search" type="button">
+													<i class="fa fa-search"></i>
+												</button>
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+
+							<!-- News Articles -->
+							<div class="news-articles">
+								<!-- Article 1 -->
+								<article class="news-article">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="article-image">
+												<img src="https://picsum.photos/seed/charaka-recent-1/80/60.jpg" alt="News Article" class="img-fluid">
+												<div class="article-category announcement">Announcement</div>
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="article-content">
+												<div class="article-meta">
+													<span class="article-date"><i class="fa fa-calendar"></i> March 15, 2026</span>
+													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
+												</div>
+												<h3 class="article-title">CHARAKA Launches New Healthcare Innovation Initiative</h3>
+												<p class="article-excerpt">We are excited to announce the launch of our groundbreaking healthcare innovation initiative aimed at transforming medical research and development in India.</p>
+												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</article>
+
+								<!-- Article 2 -->
+								<article class="news-article">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="article-image">
+												<img src="https://picsum.photos/seed/charaka-news-2/400/300.jpg" alt="News Article" class="img-fluid">
+												<div class="article-category event">Event</div>
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="article-content">
+												<div class="article-meta">
+													<span class="article-date"><i class="fa fa-calendar"></i> March 12, 2026</span>
+													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
+												</div>
+												<h3 class="article-title">Annual Healthcare Summit 2026 - Registration Now Open</h3>
+												<p class="article-excerpt">Join us for the most anticipated healthcare summit of the year. Connect with industry leaders and innovators in the medical field.</p>
+												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</article>
+
+								<!-- Article 3 -->
+								<article class="news-article">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="article-image">
+												<img src="https://picsum.photos/seed/charaka-news-3/400/300.jpg" alt="News Article" class="img-fluid">
+												<div class="article-category urgent">Urgent Notice</div>
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="article-content">
+												<div class="article-meta">
+													<span class="article-date"><i class="fa fa-calendar"></i> March 10, 2026</span>
+													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
+												</div>
+												<h3 class="article-title">Important Update: New Partnership Opportunities Available</h3>
+												<p class="article-excerpt">We are seeking strategic partners for our upcoming healthcare projects. This is a limited opportunity for qualified organizations.</p>
+												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</article>
+
+								<!-- Article 4 -->
+								<article class="news-article">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="article-image">
+												<img src="https://picsum.photos/seed/charaka-news-4/400/300.jpg" alt="News Article" class="img-fluid">
+												<div class="article-category announcement">Announcement</div>
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="article-content">
+												<div class="article-meta">
+													<span class="article-date"><i class="fa fa-calendar"></i> March 8, 2026</span>
+													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
+												</div>
+												<h3 class="article-title">Success Story: Our Latest Research Breakthrough</h3>
+												<p class="article-excerpt">Our research team has achieved a significant milestone in developing innovative solutions for healthcare challenges facing rural communities.</p>
+												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<!-- Pagination -->
+							<div class="news-pagination">
+								<nav aria-label="News pagination">
+									<ul class="pagination justify-content-center">
+										<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+										</li>
+										<li class="page-item active"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<!-- Sidebar -->
+						<div class="col-lg-4">
+							<div class="news-sidebar">
+								<!-- Recent Posts -->
+								<div class="sidebar-widget recent-posts">
+									<h3 class="widget-title1">Recent Posts</h3>
+									<div class="recent-post-item">
+										<div class="recent-post-image">
+											<img src="https://picsum.photos/seed/charaka-recent-1/80/60.jpg" alt="Recent Post" class="img-fluid">
+										</div>
+										<div class="recent-post-content">
+											<h4><a href="#">Healthcare Innovation Initiative</a></h4>
+											<span class="post-date">March 15, 2026</span>
+										</div>
+									</div>
+									<div class="recent-post-item">
+										<div class="recent-post-image">
+											<img src="https://picsum.photos/seed/charaka-recent-2/80/60.jpg" alt="Recent Post" class="img-fluid">
+										</div>
+										<div class="recent-post-content">
+											<h4><a href="#">Annual Healthcare Summit 2026</a></h4>
+											<span class="post-date">March 12, 2026</span>
+										</div>
+									</div>
+									<div class="recent-post-item">
+										<div class="recent-post-image">
+											<img src="https://picsum.photos/seed/charaka-recent-3/80/60.jpg" alt="Recent Post" class="img-fluid">
+										</div>
+										<div class="recent-post-content">
+											<h4><a href="#">New Partnership Opportunities</a></h4>
+											<span class="post-date">March 10, 2026</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Popular Updates -->
+								<div class="sidebar-widget popular-updates">
+									<h3 class="widget-title1">Popular Updates</h3>
+									<ul class="popular-list">
+										<li><a href="#">Research Breakthrough in Rural Healthcare</a></li>
+										<li><a href="#">New Medical Technology Partnership</a></li>
+										<li><a href="#">Community Health Program Launch</a></li>
+										<li><a href="#">Innovation Grant Applications Open</a></li>
+										<li><a href="#">Healthcare Policy Update</a></li>
+									</ul>
+								</div>
+
+								<!-- Archives -->
+								<div class="sidebar-widget archives">
+									<h3 class="widget-title1">Archives</h3>
+									<ul class="archives-list">
+										<li><a href="#">March 2026</a></li>
+										<li><a href="#">February 2026</a></li>
+										<li><a href="#">January 2026</a></li>
+										<li><a href="#">December 2025</a></li>
+										<li><a href="#">November 2025</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- Get In Touch End -->
 
 		</div>
 		<!-- page content End -->

@@ -2718,6 +2718,9 @@ form.contact-form .alert-danger{
 .pbmit-bg-color-blackish .contact-form input[type="date"]:not(:focus)::-webkit-calendar-picker-indicator{
 	filter: invert(.8);
 }
+    .site-navigation ul.navigation > li.active > a {
+        color: #E08A2E !important;
+    }
 form textarea.form-control{
 	padding: 20px;
 	resize: none;
@@ -2726,6 +2729,10 @@ form textarea.form-control{
 .contact-form button{
 	border: none;
 }
+
+    .main-menu .navigation > li > ul, .main-menu .navigation > li > ul > li > ul {
+		border-top: 3px solid #114c5f !important;
+	}
 
 /* satvika css */
 .charaka-brand {

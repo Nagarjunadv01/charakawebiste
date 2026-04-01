@@ -3932,7 +3932,7 @@ body {
 		display: none;
 	}
 	.main-menu .navigation > li > ul li.active > a{
-		color: var(--pbmit-secondary-color);
+		color: #E08A2E !important;
 	}
 	.site-navigation ul.navigation > li {
 		margin: 0 20px;

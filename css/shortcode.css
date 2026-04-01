@@ -36,7 +36,7 @@
 }
 .pbmit-heading-subheading .pbmit-subtitle{
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -4922,7 +4922,7 @@
 .pbmit-slider-one .pbmit-slider-content{
 	position: relative;
 	z-index: 1;
-	padding-top: 175px;
+	padding-top: 300px;
 }
 .pbmit-slider-one .pbmit-slider-title{
 	font-size: 160px;

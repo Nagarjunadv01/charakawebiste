@@ -238,405 +238,78 @@
             background-color: #e08a2e !important;
         }
 
-        /* Partners Section Styles */
-        .partners-section {
-            padding: 20px 0;
-            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-            position: relative;
-            overflow: hidden;
-        }
-
-        .partners-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.05"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.03"/><circle cx="10" cy="50" r="1" fill="white" opacity="0.03"/><circle cx="90" cy="30" r="1" fill="white" opacity="0.04"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            pointer-events: none;
-        }
-
-        .partners-header {
-            position: relative;
-            z-index: 2;
-        }
-
-        .partners-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            letter-spacing: -1px;
-        }
-
-        .partners-subtitle {
-            font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.9);
-            max-width: 600px;
-            margin: 0 auto;
-            font-weight: 300;
-        }
-
-        .partners-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-            margin-top: 3rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .partner-card {
-            position: relative;
-            height: 350px;
-            perspective: 1000px;
-            margin-bottom: 0;
-        }
-
-        .partner-inner {
-            position: relative;
+        .custom-table {
             width: 100%;
-            height: 100%;
-            background: #052e3b;
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 15px 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-style: preserve-3d;
+            min-width: 700px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 18px;
             overflow: hidden;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+            background-color: #ffffff;
+            border: 2px solid rgba(224, 138, 46, 0.45);
         }
 
-        .card {
-            border-radius: 10px;
-            background-color: white;
-        }
-
-        .top-partner-cards {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .top-partner-card {
-            background: white;
-            border: 1px solid rgba(255, 255, 255, 0.16);
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
-            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        @media (max-width: 992px) {
-            .top-partner-cards {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .top-partner-card{
-                height: 150px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .top-partner-cards {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .top-partner-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(255, 255, 255, 0.28);
-            box-shadow: 0 28px 60px rgba(0, 0, 0, 0.14);
-        }
-
-        .top-partner-card .card-body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 0px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
-        }
-
-        .top-partner-card .partner-logo {
-            max-width: 160px;
-            max-height: 120px;
-            object-fit: contain;
-            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.16));
-        }
-
-        .top-partner-card .partner-logo:hover {
-            transform: scale(1.05);
-            transition: transform 0.35s ease;
-        }
-
-        .partner-inner:hover {
-            transform: translateY(-10px) rotateX(5deg);
-            background: #e39d51;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .partner-bg-effect {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-            transform: translateX(-100%);
-            transition: transform 0.6s;
-        }
-
-        .partner-inner:hover .partner-bg-effect {
-            transform: translateX(100%);
-        }
-
-        .partner-logo-wrapper {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: #dceffc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .partner-inner:hover .partner-logo-wrapper {
-            transform: scale(1.1);
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .partner-logo {
-            max-width: 80%;
-            max-height: 80%;
-            object-fit: contain;
-            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
-        }
-
-        .partner-placeholder {
-            font-size: 3rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .partner-info {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .partner-name {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 0.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .partner-inner:hover .partner-name {
-            transform: translateY(-2px);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .partner-description {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.8);
-            margin: 0;
-            font-weight: 300;
-        }
-
-        .partner-hover-effects {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        .effect-circle {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            transform: scale(0);
-            transition: transform 0.5s ease;
-        }
-
-        .effect-1 {
-            width: 200px;
-            height: 200px;
-            top: -100px;
-            left: -100px;
-        }
-
-        .effect-2 {
-            width: 150px;
-            height: 150px;
-            top: -75px;
-            left: -75px;
-            transition-delay: 0.1s;
-        }
-
-        .effect-3 {
-            width: 100px;
-            height: 100px;
-            top: -50px;
-            left: -50px;
-            transition-delay: 0.2s;
-        }
-
-        .partner-inner:hover .effect-circle {
-            transform: scale(1);
-        }
-
-        .partners-cta {
-            margin-top: 4rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .cta-inner {
-            background: #1f3e53;
-            backdrop-filter: blur(10px);
-            border-radius: 25px;
-            padding: 3rem;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-inner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .cta-title {
-            font-size: 2.5rem;
+        .custom-table thead {
+                background: linear-gradient(135deg, #052e3b 0%, #052e3b 100%);
+            color: #ffffff;
             font-weight: 700;
-            color: #fff;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
         }
 
-        .cta-description {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 2rem;
-            position: relative;
-            z-index: 1;
+        .custom-table th,
+        .custom-table td {
+            padding: 18px 20px;
+            vertical-align: middle;
+            font-size: 15px;
+            color: #212121;
+            white-space: nowrap;
+            border-right: 1px solid #ffffff87;
         }
 
-        .cta-button {
+        .custom-table th {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: left;
+        }
+
+        .custom-table td {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .custom-table th:last-child,
+        .custom-table td:last-child {
+            border-right: none;
+        }
+
+        .custom-table tbody tr:nth-child(odd) {
+            background-color: #fff8f0;
+        }
+
+        .custom-table tbody tr:nth-child(even) {
+            background-color: #fffdf8;
+        }
+
+        .custom-table tbody tr:hover {
+            background-color: #fff1de;
+        }
+
+        .view-link {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(45deg, #e08a2e, #f4a460);
-            color: #fff;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
+            justify-content: center;
+            padding: 10px 18px;
+            color: #ffffff;
+            background-color: #e08a2e;
+            border-radius: 999px;
+            font-size: 14px;
             font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
+            text-decoration: none;
+            transition: background-color 0.25s ease, transform 0.25s ease;
         }
 
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(224, 138, 46, 0.4);
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        .cta-button i {
-            transition: transform 0.3s ease;
-        }
-
-        .cta-button:hover i {
-            transform: translateX(5px);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .partners-title {
-                font-size: 2.5rem;
-            }
-
-            .partners-grid {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-
-            .cta-title {
-                font-size: 2rem;
-            }
-
-            .cta-inner {
-                padding: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .partners-section {
-                padding: 10px 0;
-            }
-
-            .partners-title {
-                font-size: 2rem;
-            }
-
-            .partner-card {
-                height: 300px;
-            }
-
-            .partner-logo-wrapper {
-                width: 75px;
-                height: 75px;
-            }
+        .view-link:hover {
+            background-color: #c26f1f;
+            transform: translateY(-1px);
+            text-decoration: none;
         }
 
         /* =========================
@@ -788,16 +461,15 @@
                                         <nav class="main-navigation pbmit-navbar main-menu navbar-expand-xl navbar-light"
                                             id="site-navigation">
                                             <div class="pbmit-menu-wrap">
-                                                 <ul class="navigation clearfix" id="pbmit-top-menu">
+                                                <ul class="navigation clearfix" id="pbmit-top-menu">
 
                                                     <li><a href="index.html">Home</a></li>
                                                     <li><a href="aboutus.html">About Us </a></li>
 
                                                     <li><a href="programs.html">Programs & Initiatives </a></li>
-                                                    <li class="active"><a href="partners.html">Partners</a></li>
-                                                    <li class="dropdown ">
-                                                        <a href="#">News & Updates<i
-                                                                class="fa fa-chevron-down fw-bold"></i></a>
+                                                    <li><a href="partners.html">Partners</a></li>
+                                                    <li class="dropdown active">
+                                                        <a href="#">News & Updates</a>
                                                         <ul class="sub-menu">
                                                             <li><a href="comingsoon.html">News & Updates</a></li>
 
@@ -899,84 +571,43 @@
                             <div class="pbmit-breadcrumb-inner">
                                 <span><a title="" href="index.html" class="home"><span>Home</span></a></span>
                                 <span class="sep"><i class="pbmit-base-icon-next-1"></i></span>
-                                <span><span class="post-root post post-post current-item">Partners</span></span>
+                                <span><span class="post-root post post-post current-item">Tenders</span></span>
                             </div>
                         </div>
                         <div class="pbmit-tbar">
                             <div class="pbmit-tbar-inner">
-                                <h1 class="pbmit-tbar-title">Partners</h1>
-                                <p class="pbmit-tbar-desc">We invite organizations to collaborate in shaping this
-                                    platform.</p>
+                                <h1 class="pbmit-tbar-title">Tenders</h1>
+                                <!-- <p class="pbmit-tbar-desc">Be part of the journey of CHARAKA.</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- page content -->
-        <div class="page-content">
-
-            <!-- Get In Touch Start -->
-            <section class="section-xl talent-contact-sec">
-                <div class="container">
-                    <div class="top-partner-cards">
-                        <div class="card top-partner-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-body">
-                                <img src="images/partners/itbtgok_logo-removebg-preview.png"
-                                    alt="Department of IT & BT Govt of Karnataka" class="partner-logo">
-                            </div>
-                        </div>
-                        <div class="card top-partner-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-body">
-                                <img src="images/partners/KITSlogo.png"
-                                    alt="KITS" class="partner-logo">
-                            </div>
-                        </div>
-                        <div class="card top-partner-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-body">
-                                <img src="images/partners/Innovate_Karnatakalogo.png"
-                                    alt="Innovate Karnataka" class="partner-logo">
-                            </div>
-                        </div>
-                        <div class="card top-partner-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-body">
-                                <img src="images/partners/StartupKarnatakalogo.png"
-                                    alt="Startup Karnataka" class="partner-logo">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="partners-section">
-
-
-                      
-
-                        <!-- Partnership CTA -->
-                        <div class="partners-cta" data-aos="zoom-in" data-aos-delay="500">
-                            <div class="cta-inner">
-                                <h3 class="cta-title">Knowledge Hub</h3>
-                                <p class="cta-description">
-                                <ul style="padding-left: 20px;">
-                                    <li class="text-white">● Insights and thought leadership</li>
-                                    <li class="text-white">● Policy perspectives</li>
-                                    <li class="text-white">● Innovation case studies</li>
-                                </ul>
-                                </p>
-                                <a href="contactus.html" class="cta-button">
-                                    <span>Subscribe</span>
-                                    <!-- <i class="fas fa-arrow-right"></i> -->
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section-xl talent-contact-sec">
+            <div class="container">
+                <!-- Scroll wrapper -->
+                <div class="table-responsive">
+                    <table class="table custom-table">
+                        <thead>
+                            <tr>
+                                <th class="text-white">SI.NO</th>
+                                <th class="text-white">Tender Name</th>
+                                <th class="text-white">Subject</th>
+                                <th class="text-white">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" class="text-center" style="padding: 40px 20px; color: #6b6b6b; font-style:normal;">
+                                    No data found.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </section>
-            <!-- Get In Touch End -->
-
-        </div>
-        <!-- page content End -->
+            </div>
+        </section>
 
         <!-- footer -->
 		<footer class="site-footer pbmit-footer-style-1">

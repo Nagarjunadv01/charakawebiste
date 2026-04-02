@@ -93,553 +93,676 @@
 			display: flex;
 			align-items: center;
 		}
+
 		/* Main card */
-.get-involved-box {
-    overflow: hidden;
-    padding: 40px 30px;
-}
-
-/* Layout wrapper */
-.review-highlight-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    position: relative;
-    z-index: 2;
-}
-
-/* Text section */
-.review-highlight {
-    flex: 1;
-    z-index: 2;
-}
-
-.review-highlight .pbmit-title {
-    font-size: 42px !important;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: #29d9e5; /* optional */
-}
-
-.review-highlight .pbmit-desc {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-/* Image section */
-.testimonial-img-01 {
-    flex: 0 0 220px;
-    text-align: right;
-    z-index: 1;
-}
-
-.testimonial-img-01 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Button spacing */
-.pbmit-ihbox-btn .pbmit-btn {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* ---------------- MOBILE FIX ---------------- */
-@media (max-width: 991px) {
-    .review-highlight-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .testimonial-img-01 {
-        flex: unset;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .testimonial-img-01 img {
-        max-width: 220px;
-        margin: 0 auto;
-    }
-
-    .review-highlight .pbmit-title {
-        font-size: 34px;
-    }
-
-    .review-highlight .pbmit-desc {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-}
-
-@media (max-width: 767px) {
-    .get-involved-box {
-        padding: 30px 20px;
-    }
-
-    .review-highlight .pbmit-title {
-        font-size: 28px;
-        line-height: 1.2;
-    }
-
-    .review-highlight .pbmit-desc {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    .testimonial-img-01 img {
-        max-width: 180px;
-    }
-
-    .pbmit-ihbox-btn .pbmit-btn {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .review-highlight .pbmit-title {
-        font-size: 24px;
-    }
-
-    .review-highlight .pbmit-desc {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .testimonial-img-01 img {
-        max-width: 150px;
-    }
-}
-
-@media (max-width: 767px) {
-    .talent-contact-right .right-column {
-        margin-top: 30px;
-        height: 612px;
-		
-    }
-}
-	@media (max-width: 320px) {
-		.talent-contact-right .review-highlight .pbmit-desc {
-			color: #fff !important;
+		.get-involved-box {
+			overflow: hidden;
+			padding: 40px 30px;
 		}
-	}
-	.pbmit-btn{
-		color: #fff !important;
-		background-color: #e08a2e !important;
-	}
 
-	/* News & Updates Styles */
-	.news-updates-sec {
-		padding: 80px 0;
-		/* background-color: #f8f9fa; */
-	}
-
-	/* Filter Bar */
-	.news-filter-bar {
-		background: #fff;
-		padding: 20px;
-		border-radius: 8px;
-		margin-bottom: 30px;
-		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-	}
-
-	.filter-dropdown .form-select {
-		border: 1px solid #e0e0e0;
-		border-radius: 6px;
-		padding: 10px 15px;
-		font-size: 14px;
-		background-color: #fff;
-	}
-
-	.search-box .input-group {
-		position: relative;
-	}
-
-	.search-box .form-control {
-		border: 1px solid #e0e0e0;
-		border-radius: 6px 0 0 6px;
-		padding: 10px 15px;
-		font-size: 14px;
-	}
-
-	.search-box .btn-search {
-		background: #e08a2e;
-		border: 1px solid #e08a2e;
-		border-radius: 0 6px 6px 0;
-		color: #fff;
-		padding: 10px 15px;
-	}
-
-	/* News Articles */
-	.news-articles {
-		margin-bottom: 40px;
-	}
-
-	.news-article {
-		background: #fff;
-		border-radius: 8px;
-		padding: 25px;
-		margin-bottom: 25px;
-		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
-	}
-
-	.news-article:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-	}
-
-	.article-image {
-		position: relative;
-		overflow: hidden;
-		border-radius: 6px;
-	}
-
-	.article-image img {
-		width: 100%;
-		height: 200px;
-		object-fit: cover;
-		transition: transform 0.3s ease;
-	}
-
-	.article-image:hover img {
-		transform: scale(1.05);
-	}
-
-	.article-category {
-		position: absolute;
-		top: 15px;
-		left: 15px;
-		padding: 5px 12px;
-		border-radius: 4px;
-		font-size: 12px;
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #fff;
-	}
-
-	.article-category.announcement {
-		background: #28a745;
-	}
-
-	.article-category.event {
-		background: #007bff;
-	}
-
-	.article-category.urgent {
-		background: #dc3545;
-	}
-
-	.article-content {
-		padding: 0 15px;
-	}
-
-	.article-meta {
-		margin-bottom: 15px;
-		font-size: 13px;
-		color: #666;
-	}
-
-	.article-meta span {
-		margin-right: 20px;
-	}
-
-	.article-meta i {
-		margin-right: 5px;
-	}
-
-	.article-title {
-		font-size: 20px;
-		font-weight: 600;
-		margin-bottom: 15px;
-		line-height: 1.4;
-		color: #333;
-	}
-
-	.article-title:hover {
-		color: #e08a2e;
-	}
-
-	.article-excerpt {
-		font-size: 14px;
-		line-height: 1.6;
-		color: #666;
-		margin-bottom: 20px;
-	}
-
-	.read-more-btn {
-		color: #e08a2e;
-		text-decoration: none;
-		font-weight: 500;
-		font-size: 14px;
-		transition: color 0.3s ease;
-	}
-
-	.read-more-btn:hover {
-		color: #d6791f;
-		text-decoration: none;
-	}
-
-	/* Pagination */
-	.news-pagination {
-		margin-top: 40px;
-	}
-
-	.pagination {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 5px;
-	}
-
-	.pagination .page-link {
-		color: #666;
-		border: 1px solid #e0e0e0;
-		margin: 0 3px;
-		border-radius: 6px;
-		padding: 10px 15px;
-		min-width: 44px;
-		min-height: 44px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-decoration: none;
-		font-weight: 500;
-		transition: all 0.3s ease;
-	}
-
-	.pagination .page-link:hover {
-		background: #e08a2e;
-		color: #fff;
-		border-color: #e08a2e;
-		transform: translateY(-1px);
-		box-shadow: 0 2px 8px rgba(224, 138, 46, 0.3);
-	}
-
-	.pagination .page-item.active .page-link {
-		background: #e08a2e;
-		border-color: #e08a2e;
-		color: #fff;
-		font-weight: 600;
-		box-shadow: 0 2px 8px rgba(224, 138, 46, 0.3);
-	}
-
-	.pagination .page-item.disabled .page-link {
-		color: #ccc;
-		border-color: #e0e0e0;
-		background: #f8f9fa;
-		cursor: not-allowed;
-		opacity: 0.6;
-	}
-
-	.pagination .page-item.disabled .page-link:hover {
-		background: #f8f9fa;
-		color: #ccc;
-		border-color: #e0e0e0;
-		transform: none;
-		box-shadow: none;
-	}
-
-	/* Sidebar */
-	.news-sidebar {
-		position: sticky;
-		top: 20px;
-	}
-
-	.sidebar-widget {
-		background: #fff;
-		border-radius: 8px;
-		padding: 25px;
-		margin-bottom: 25px;
-		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-	}
-
-	.widget-title1 {
-		font-size: 18px;
-		font-weight: 600;
-		margin-bottom: 20px;
-		color: #333;
-		padding-bottom: 10px;
-		border-bottom: 2px solid #e08a2e;
-	}
-
-	/* Recent Posts */
-	.recent-post-item {
-		display: flex;
-		align-items: center;
-		margin-bottom: 15px;
-		padding-bottom: 15px;
-		border-bottom: 1px solid #f0f0f0;
-	}
-
-	.recent-post-item:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		border-bottom: none;
-	}
-
-	.recent-post-image {
-		flex: 0 0 80px;
-		margin-right: 15px;
-	}
-
-	.recent-post-image img {
-		width: 80px;
-		height: 60px;
-		object-fit: cover;
-		border-radius: 6px;
-	}
-
-	.recent-post-content h4 {
-		font-size: 14px;
-		font-weight: 600;
-		margin-bottom: 5px;
-		line-height: 1.4;
-	}
-
-	.recent-post-content h4 a {
-		color: #333;
-		text-decoration: none;
-	}
-
-	.recent-post-content h4 a:hover {
-		color: #e08a2e;
-	}
-
-	.post-date {
-		font-size: 12px;
-		color: #666;
-	}
-
-	/* Popular Updates */
-	.popular-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.popular-list li {
-		margin-bottom: 12px;
-		padding-bottom: 12px;
-		border-bottom: 1px solid #f0f0f0;
-	}
-
-	.popular-list li:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		border-bottom: none;
-	}
-
-	.popular-list li a {
-		color: #333;
-		text-decoration: none;
-		font-size: 14px;
-		line-height: 1.5;
-		transition: color 0.3s ease;
-	}
-
-	.popular-list li a:hover {
-		color: #e08a2e;
-	}
-
-	/* Archives */
-	.archives-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.archives-list li {
-		margin-bottom: 10px;
-		padding-bottom: 10px;
-		border-bottom: 1px solid #f0f0f0;
-	}
-
-	.archives-list li:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		border-bottom: none;
-	}
-
-	.archives-list li a {
-		color: #333;
-		text-decoration: none;
-		font-size: 14px;
-		transition: color 0.3s ease;
-	}
-
-	.archives-list li a:hover {
-		color: #e08a2e;
-	}
-
-	/* Responsive Design */
-	@media (max-width: 991px) {
-		.news-updates-sec {
-			padding: 60px 0;
+		/* Layout wrapper */
+		.review-highlight-wrap {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 30px;
+			position: relative;
+			z-index: 2;
 		}
-		
-		.news-sidebar {
-			margin-top: 40px;
-			position: static;
-		}
-		
-		.article-content {
-			padding: 0;
-			margin-top: 20px;
-		}
-		
-		.news-article {
-			padding: 20px;
-		}
-	}
 
-	@media (max-width: 767px) {
-		.news-updates-sec {
-			padding: 40px 0;
+		/* Text section */
+		.review-highlight {
+			flex: 1;
+			z-index: 2;
 		}
-		
-		.news-filter-bar {
-			padding: 15px;
+
+		.review-highlight .pbmit-title {
+			font-size: 42px !important;
+			line-height: 1.2;
+			margin-bottom: 20px;
+			color: #29d9e5;
+			/* optional */
 		}
-		
-		.filter-dropdown,
-		.search-box {
-			margin-bottom: 15px;
-		}
-		
-		.article-image img {
-			height: 150px;
-		}
-		
-		.article-title {
+
+		.review-highlight .pbmit-desc {
 			font-size: 18px;
+			line-height: 1.8;
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 0;
 		}
-		
-		.sidebar-widget {
+
+		/* Image section */
+		.testimonial-img-01 {
+			flex: 0 0 220px;
+			text-align: right;
+			z-index: 1;
+		}
+
+		.testimonial-img-01 img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		/* Button spacing */
+		.pbmit-ihbox-btn .pbmit-btn {
+			display: inline-block;
+			margin-top: 10px;
+		}
+
+		/* ---------------- MOBILE FIX ---------------- */
+		@media (max-width: 991px) {
+			.review-highlight-wrap {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.testimonial-img-01 {
+				flex: unset;
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.testimonial-img-01 img {
+				max-width: 220px;
+				margin: 0 auto;
+			}
+
+			.review-highlight .pbmit-title {
+				font-size: 34px;
+			}
+
+			.review-highlight .pbmit-desc {
+				font-size: 16px;
+				line-height: 1.7;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.get-involved-box {
+				padding: 30px 20px;
+			}
+
+			.review-highlight .pbmit-title {
+				font-size: 28px;
+				line-height: 1.2;
+			}
+
+			.review-highlight .pbmit-desc {
+				font-size: 15px;
+				line-height: 1.6;
+			}
+
+			.testimonial-img-01 img {
+				max-width: 180px;
+			}
+
+			.pbmit-ihbox-btn .pbmit-btn {
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.review-highlight .pbmit-title {
+				font-size: 24px;
+			}
+
+			.review-highlight .pbmit-desc {
+				font-size: 14px;
+				line-height: 1.6;
+			}
+
+			.testimonial-img-01 img {
+				max-width: 150px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.talent-contact-right .right-column {
+				margin-top: 30px;
+				height: 612px;
+
+			}
+		}
+
+		@media (max-width: 320px) {
+			.talent-contact-right .review-highlight .pbmit-desc {
+				color: #fff !important;
+			}
+		}
+
+		.pbmit-btn {
+			color: #fff !important;
+			background-color: #e08a2e !important;
+		}
+
+		/* News & Updates Styles */
+		.news-updates-sec {
+			padding: 80px 0;
+			/* background-color: #f8f9fa; */
+		}
+
+		/* Filter Bar */
+		.news-filter-bar {
+			background: #fff;
 			padding: 20px;
+			border-radius: 8px;
+			margin-bottom: 30px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 		}
-		
+
+		.filter-dropdown .form-select {
+			border: 1px solid #e0e0e0;
+			border-radius: 6px;
+			padding: 10px 15px;
+			font-size: 14px;
+			background-color: #fff;
+		}
+
+		.search-box .input-group {
+			position: relative;
+		}
+
+		.search-box .form-control {
+			border: 1px solid #e0e0e0;
+			border-radius: 6px 0 0 6px;
+			padding: 10px 15px;
+			font-size: 14px;
+		}
+
+		.search-box .btn-search {
+			background: #e08a2e;
+			border: 1px solid #e08a2e;
+			border-radius: 0 6px 6px 0;
+			color: #fff;
+			padding: 10px 15px;
+		}
+
+		/* News Articles */
+		.news-articles {
+			margin-bottom: 40px;
+		}
+
+		.news-article {
+			background: #fff;
+			border-radius: 8px;
+			padding: 25px;
+			margin-bottom: 25px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.news-article:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+		}
+
+		.article-image {
+			position: relative;
+			overflow: hidden;
+			border-radius: 6px;
+		}
+
+		.article-image img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			transition: transform 0.3s ease;
+		}
+
+		.article-image:hover img {
+			transform: scale(1.05);
+		}
+
+		.article-category {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			padding: 5px 12px;
+			border-radius: 4px;
+			font-size: 12px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+		.article-category.announcement {
+			background: #28a745;
+		}
+
+		.article-category.event {
+			background: #007bff;
+		}
+
+		.article-category.urgent {
+			background: #dc3545;
+		}
+
+		.article-content {
+			padding: 0 15px;
+		}
+
+		.article-meta {
+			margin-bottom: 15px;
+			font-size: 13px;
+			color: #666;
+		}
+
+		.article-meta span {
+			margin-right: 20px;
+		}
+
+		.article-meta i {
+			margin-right: 5px;
+		}
+
+		.article-title {
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			line-height: 1.4;
+			color: #333;
+		}
+
+		.article-title:hover {
+			color: #e08a2e;
+		}
+
+		.article-excerpt {
+			font-size: 14px;
+			line-height: 1.6;
+			color: #666;
+			margin-bottom: 20px;
+		}
+
+		.read-more-btn {
+			color: #e08a2e;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 14px;
+			transition: color 0.3s ease;
+		}
+
+		.read-more-btn:hover {
+			color: #d6791f;
+			text-decoration: none;
+		}
+
+		/* Pagination */
+		.news-pagination {
+			margin-top: 40px;
+		}
+
+		.pagination {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+
+		.pagination .page-link {
+			color: #666;
+			border: 1px solid #e0e0e0;
+			margin: 0 3px;
+			border-radius: 6px;
+			padding: 10px 15px;
+			min-width: 44px;
+			min-height: 44px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			font-weight: 500;
+			transition: all 0.3s ease;
+		}
+
+		.pagination .page-link:hover {
+			background: #e08a2e;
+			color: #fff;
+			border-color: #e08a2e;
+			transform: translateY(-1px);
+			box-shadow: 0 2px 8px rgba(224, 138, 46, 0.3);
+		}
+
+		.pagination .page-item.active .page-link {
+			background: #e08a2e;
+			border-color: #e08a2e;
+			color: #fff;
+			font-weight: 600;
+			box-shadow: 0 2px 8px rgba(224, 138, 46, 0.3);
+		}
+
+		.pagination .page-item.disabled .page-link {
+			color: #ccc;
+			border-color: #e0e0e0;
+			background: #f8f9fa;
+			cursor: not-allowed;
+			opacity: 0.6;
+		}
+
+		.pagination .page-item.disabled .page-link:hover {
+			background: #f8f9fa;
+			color: #ccc;
+			border-color: #e0e0e0;
+			transform: none;
+			box-shadow: none;
+		}
+
+		/* Sidebar */
+		.news-sidebar {
+			position: sticky;
+			top: 20px;
+		}
+
+		.sidebar-widget {
+			background: #fff;
+			border-radius: 8px;
+			padding: 25px;
+			margin-bottom: 25px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.widget-title1 {
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			color: #333;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #e08a2e;
+		}
+
+		/* Recent Posts */
 		.recent-post-item {
-			flex-direction: column;
-			align-items: flex-start;
+			display: flex;
+			align-items: center;
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #f0f0f0;
 		}
-		
+
+		.recent-post-item:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+
 		.recent-post-image {
-			margin-right: 0;
-			margin-bottom: 10px;
+			flex: 0 0 80px;
+			margin-right: 15px;
 		}
-	}
-</style>
+
+		.recent-post-image img {
+			width: 80px;
+			height: 60px;
+			object-fit: cover;
+			border-radius: 6px;
+		}
+
+		.recent-post-content h4 {
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 5px;
+			line-height: 1.4;
+		}
+
+		.recent-post-content h4 a {
+			color: #333;
+			text-decoration: none;
+		}
+
+		.recent-post-content h4 a:hover {
+			color: #e08a2e;
+		}
+
+		.post-date {
+			font-size: 12px;
+			color: #666;
+		}
+
+		/* Popular Updates */
+		.popular-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.popular-list li {
+			margin-bottom: 12px;
+			padding-bottom: 12px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+
+		.popular-list li:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+
+		.popular-list li a {
+			color: #333;
+			text-decoration: none;
+			font-size: 14px;
+			line-height: 1.5;
+			transition: color 0.3s ease;
+		}
+
+		.popular-list li a:hover {
+			color: #e08a2e;
+		}
+
+		/* Archives */
+		.archives-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.archives-list li {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+
+		.archives-list li:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+
+		.archives-list li a {
+			color: #333;
+			text-decoration: none;
+			font-size: 14px;
+			transition: color 0.3s ease;
+		}
+
+		.archives-list li a:hover {
+			color: #e08a2e;
+		}
+
+		/* Responsive Design */
+		@media (max-width: 991px) {
+			.news-updates-sec {
+				padding: 60px 0;
+			}
+
+			.news-sidebar {
+				margin-top: 40px;
+				position: static;
+			}
+
+			.article-content {
+				padding: 0;
+				margin-top: 20px;
+			}
+
+			.news-article {
+				padding: 20px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.news-updates-sec {
+				padding: 40px 0;
+			}
+
+			.news-filter-bar {
+				padding: 15px;
+			}
+
+			.filter-dropdown,
+			.search-box {
+				margin-bottom: 15px;
+			}
+
+			.article-image img {
+				height: 150px;
+			}
+
+			.article-title {
+				font-size: 18px;
+			}
+
+			.sidebar-widget {
+				padding: 20px;
+			}
+
+			.recent-post-item {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.recent-post-image {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+
+
+		/* =========================
+           SPRING ROUND LOADER
+        ========================== */
+        .spring-loader-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            animation: fadeIn 0.25s ease-in-out;
+        }
+
+        .spring-round-loader-box {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow:
+                0 15px 40px rgba(255, 182, 193, 0.18),
+                inset 0 1px 8px rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: popIn 0.3s ease;
+        }
+
+        .loader-title {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #4b5563;
+            margin-bottom: 5px;
+            letter-spacing: 0.4px;
+        }
+
+        .loader-subtitle {
+            font-size: 14px;
+            color: #7b8a7b;
+            margin-bottom: 0;
+        }
+
+        .spring-bloom-loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .spring-bloom-loader span {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: inline-block;
+            animation: bloomBounce 0.9s infinite ease-in-out;
+            box-shadow: 0 6px 16px rgba(255, 182, 193, 0.25);
+        }
+
+        .spring-bloom-loader span:nth-child(1) {
+            background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
+            animation-delay: 0s;
+        }
+
+        .spring-bloom-loader span:nth-child(2) {
+            background: linear-gradient(135deg, #86efac, #bbf7d0);
+            animation-delay: 0.18s;
+        }
+
+        .spring-bloom-loader span:nth-child(3) {
+            background: linear-gradient(135deg, #fcd34d, #fde68a);
+            animation-delay: 0.36s;
+        }
+
+        @keyframes bloomBounce {
+            0%, 80%, 100% {
+                transform: scale(0.85) translateY(0);
+                opacity: 0.75;
+            }
+            40% {
+                transform: scale(1.15) translateY(-10px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.92);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+	</style>
 </head>
 
 <body>
+
+	<!-- Page Loader -->
+	<div id="loader" class="spring-loader-overlay">
+		<div class="spring-round-loader-box">
+			<div class="spring-bloom-loader">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<h5 class="loader-title">CHARAKA</h5>
+			<p class="loader-subtitle">Please wait...</p>
+		</div>
+	</div>
 
 	<!-- page wrapper -->
 	<div class="page-wrapper" id="page">
@@ -649,7 +772,7 @@
 			<div class="pbmit-sticky-header pbmit-header-sticky-yes"></div>
 			<div class="pbmit-header-overlay">
 				<div class="pbmit-main-header-area pbmit-infostack-header">
-					 <div class="container-fluid">
+					<div class="container-fluid">
 						<div class="pbmit-header-content d-flex justify-content-between align-items-center gap-4">
 							<div class="pbmit-header-menu-area d-flex align-items-center justify-content-between">
 								<div class="pbmit-logo-area col-md-1 col-4">
@@ -668,31 +791,24 @@
 										<nav class="main-navigation pbmit-navbar main-menu navbar-expand-xl navbar-light"
 											id="site-navigation">
 											<div class="pbmit-menu-wrap">
-												<ul class="navigation clearfix" id="pbmit-top-menu">
+												  <ul class="navigation clearfix" id="pbmit-top-menu">
 
-													<li ><a href="index.html">Home</a></li>
-													<li class="dropdown ">
-														<a href="#">About Us <i
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="aboutus.html">About Us </a></li>
+
+                                                    <li><a href="programs.html">Programs & Initiatives </a></li>
+                                                    <li><a href="partners.html">Partners</a></li>
+                                                    <li class="dropdown active">
+                                                        <a href="#">News & Updates<i
                                                                 class="fa fa-chevron-down fw-bold"></i></a>
-														<ul class="sub-menu">
-															<li><a href="aboutcharaka.html">About Charaka</a></li>
-															
-															<li><a href="boardofdirectors.html">Board of Directors</a></li>
-														</ul>
-													</li>
-													<li><a href="programs.html">Programs & Initiatives </a></li>
-													<li><a href="partners.html">Partners</a></li>
-													<li class="dropdown active">
-														<a href="#">News & Updates<i
-                                                                class="fa fa-chevron-down fw-bold"></i></a>
-														<ul class="sub-menu">
-															<li><a href="news&updates.html">News & Updates</a></li>
-															
-															<li><a href="#">Tenders</a></li>
-														</ul>
-													</li>
-													<li ><a href="contactus.html">Contact Us</a></li>
-												</ul>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="comingsoon.html">News & Updates</a></li>
+
+                                                            <li><a href="tenders.html">Tenders</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="contactus.html">Contact Us</a></li>
+                                                </ul>
 											</div>
 										</nav>
 									</div>
@@ -722,12 +838,12 @@
 											</div>
 											<div class="pbmit-ihbox-contents p-3">
 												<h2 class="pbmit-element-title">
-													<a href="tel:9845140421">
-														<span class="pbmit-button-text">9845140421</span>
+													<a href="tel: 9845104042">
+														<span class="pbmit-button-text"> 9845104042</span>
 													</a>
 												</h2>
 											</div>
-											<a class="pbmit-link" href="tel:9845140421" title="Go to 9845140421"></a>
+											<a class="pbmit-link" href="tel: 9845104042" title="Go to  9845104042"></a>
 										</div>
 									</div>
 									<!-- <div class="pbmit-search-wrapper">
@@ -813,7 +929,7 @@
 								<div class="row align-items-center">
 									<div class="col-md-6">
 										<div class="filter-dropdown">
-											<select class="form-select mb-0" >
+											<select class="form-select mb-0">
 												<option>All Categories</option>
 												<option>Announcement</option>
 												<option>Event</option>
@@ -824,7 +940,8 @@
 									<div class="col-md-6">
 										<div class="search-box">
 											<div class="input-group">
-												<input type="text" class="form-control mb-0" placeholder="Search news...">
+												<input type="text" class="form-control mb-0"
+													placeholder="Search news...">
 												<button class="btn btn-search" type="button">
 													<i class="fa fa-search"></i>
 												</button>
@@ -841,19 +958,25 @@
 									<div class="row">
 										<div class="col-md-4">
 											<div class="article-image">
-												<img src="https://picsum.photos/seed/charaka-recent-1/80/60.jpg" alt="News Article" class="img-fluid">
+												<img src="https://picsum.photos/seed/charaka-recent-1/80/60.jpg"
+													alt="News Article" class="img-fluid">
 												<div class="article-category announcement">Announcement</div>
 											</div>
 										</div>
 										<div class="col-md-8">
 											<div class="article-content">
 												<div class="article-meta">
-													<span class="article-date"><i class="fa fa-calendar"></i> March 15, 2026</span>
+													<span class="article-date"><i class="fa fa-calendar"></i> March 15,
+														2026</span>
 													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
 												</div>
-												<h3 class="article-title">CHARAKA Launches New Healthcare Innovation Initiative</h3>
-												<p class="article-excerpt">We are excited to announce the launch of our groundbreaking healthcare innovation initiative aimed at transforming medical research and development in India.</p>
-												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+												<h3 class="article-title">CHARAKA Launches New Healthcare Innovation
+													Initiative</h3>
+												<p class="article-excerpt">We are excited to announce the launch of our
+													groundbreaking healthcare innovation initiative aimed at
+													transforming medical research and development in India.</p>
+												<a href="#" class="read-more-btn">Read More <i
+														class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 									</div>
@@ -864,19 +987,25 @@
 									<div class="row">
 										<div class="col-md-4">
 											<div class="article-image">
-												<img src="https://picsum.photos/seed/charaka-news-2/400/300.jpg" alt="News Article" class="img-fluid">
+												<img src="https://picsum.photos/seed/charaka-news-2/400/300.jpg"
+													alt="News Article" class="img-fluid">
 												<div class="article-category event">Event</div>
 											</div>
 										</div>
 										<div class="col-md-8">
 											<div class="article-content">
 												<div class="article-meta">
-													<span class="article-date"><i class="fa fa-calendar"></i> March 12, 2026</span>
+													<span class="article-date"><i class="fa fa-calendar"></i> March 12,
+														2026</span>
 													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
 												</div>
-												<h3 class="article-title">Annual Healthcare Summit 2026 - Registration Now Open</h3>
-												<p class="article-excerpt">Join us for the most anticipated healthcare summit of the year. Connect with industry leaders and innovators in the medical field.</p>
-												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+												<h3 class="article-title">Annual Healthcare Summit 2026 - Registration
+													Now Open</h3>
+												<p class="article-excerpt">Join us for the most anticipated healthcare
+													summit of the year. Connect with industry leaders and innovators in
+													the medical field.</p>
+												<a href="#" class="read-more-btn">Read More <i
+														class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 									</div>
@@ -887,19 +1016,25 @@
 									<div class="row">
 										<div class="col-md-4">
 											<div class="article-image">
-												<img src="https://picsum.photos/seed/charaka-news-3/400/300.jpg" alt="News Article" class="img-fluid">
+												<img src="https://picsum.photos/seed/charaka-news-3/400/300.jpg"
+													alt="News Article" class="img-fluid">
 												<div class="article-category urgent">Urgent Notice</div>
 											</div>
 										</div>
 										<div class="col-md-8">
 											<div class="article-content">
 												<div class="article-meta">
-													<span class="article-date"><i class="fa fa-calendar"></i> March 10, 2026</span>
+													<span class="article-date"><i class="fa fa-calendar"></i> March 10,
+														2026</span>
 													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
 												</div>
-												<h3 class="article-title">Important Update: New Partnership Opportunities Available</h3>
-												<p class="article-excerpt">We are seeking strategic partners for our upcoming healthcare projects. This is a limited opportunity for qualified organizations.</p>
-												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+												<h3 class="article-title">Important Update: New Partnership
+													Opportunities Available</h3>
+												<p class="article-excerpt">We are seeking strategic partners for our
+													upcoming healthcare projects. This is a limited opportunity for
+													qualified organizations.</p>
+												<a href="#" class="read-more-btn">Read More <i
+														class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 									</div>
@@ -910,19 +1045,25 @@
 									<div class="row">
 										<div class="col-md-4">
 											<div class="article-image">
-												<img src="https://picsum.photos/seed/charaka-news-4/400/300.jpg" alt="News Article" class="img-fluid">
+												<img src="https://picsum.photos/seed/charaka-news-4/400/300.jpg"
+													alt="News Article" class="img-fluid">
 												<div class="article-category announcement">Announcement</div>
 											</div>
 										</div>
 										<div class="col-md-8">
 											<div class="article-content">
 												<div class="article-meta">
-													<span class="article-date"><i class="fa fa-calendar"></i> March 8, 2026</span>
+													<span class="article-date"><i class="fa fa-calendar"></i> March 8,
+														2026</span>
 													<span class="article-author"><i class="fa fa-user"></i> Admin</span>
 												</div>
-												<h3 class="article-title">Success Story: Our Latest Research Breakthrough</h3>
-												<p class="article-excerpt">Our research team has achieved a significant milestone in developing innovative solutions for healthcare challenges facing rural communities.</p>
-												<a href="#" class="read-more-btn">Read More <i class="fa fa-arrow-right"></i></a>
+												<h3 class="article-title">Success Story: Our Latest Research
+													Breakthrough</h3>
+												<p class="article-excerpt">Our research team has achieved a significant
+													milestone in developing innovative solutions for healthcare
+													challenges facing rural communities.</p>
+												<a href="#" class="read-more-btn">Read More <i
+														class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 									</div>
@@ -955,7 +1096,8 @@
 									<h3 class="widget-title1">Recent Posts</h3>
 									<div class="recent-post-item">
 										<div class="recent-post-image">
-											<img src="https://picsum.photos/seed/charaka-recent-1/80/60.jpg" alt="Recent Post" class="img-fluid">
+											<img src="https://picsum.photos/seed/charaka-recent-1/80/60.jpg"
+												alt="Recent Post" class="img-fluid">
 										</div>
 										<div class="recent-post-content">
 											<h4><a href="#">Healthcare Innovation Initiative</a></h4>
@@ -964,7 +1106,8 @@
 									</div>
 									<div class="recent-post-item">
 										<div class="recent-post-image">
-											<img src="https://picsum.photos/seed/charaka-recent-2/80/60.jpg" alt="Recent Post" class="img-fluid">
+											<img src="https://picsum.photos/seed/charaka-recent-2/80/60.jpg"
+												alt="Recent Post" class="img-fluid">
 										</div>
 										<div class="recent-post-content">
 											<h4><a href="#">Annual Healthcare Summit 2026</a></h4>
@@ -973,7 +1116,8 @@
 									</div>
 									<div class="recent-post-item">
 										<div class="recent-post-image">
-											<img src="https://picsum.photos/seed/charaka-recent-3/80/60.jpg" alt="Recent Post" class="img-fluid">
+											<img src="https://picsum.photos/seed/charaka-recent-3/80/60.jpg"
+												alt="Recent Post" class="img-fluid">
 										</div>
 										<div class="recent-post-content">
 											<h4><a href="#">New Partnership Opportunities</a></h4>
@@ -1021,7 +1165,7 @@
 					<div class="row">
 						<div class="pbmit-footer-widget-col-1 col-md-4 left-column">
 							<div class="left-area animated animation fadeInUp">
-								<h2 class="pbmit-subtitle">CHARAKA </h2>
+								<h2 class="pbmit-subtitle d-flex flex-row align-items-center"><img src="images/website/website/charakalogo.png" class="charaka-logo" alt="Charaka Logo"> <span class="fs-5 text-white">CHARAKA</span> </h2>
 								<h2 class="pbmit-title">Building India’s Future
 									Health Innovation Engine.</h2>
 								<form>
@@ -1061,28 +1205,23 @@
 								</div>
 							</div>
 						</div>
-						<div class="pbmit-footer-widget-col-2 col-md-2 animated animation fadeInUp animation-delay-100">
+						<div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
 							<aside class="widget">
 								<h2 class="widget-title">Menu</h2>
 								<ul class="menu">
 									<li><a href="index.html">Home</a></li>
-									<!-- <li><a href="">About Us</a></li> -->
-									<li><a href="programs.html">Programs & <br> Initiatives</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+									<li><a href="partners.html">Partners</a></li>
+									<li><a href="tenders.html">Tenders</a></li>
+									<li><a href="programs.html">Programs &  Initiatives</a></li>
 									<!-- <li><a href="">Partners</a></li> -->
-									<li><a href="news&updates.html">News & Updates</a></li>
 									<li><a href="contactus.html">Contact Us</a></li>
 								</ul>
 							</aside>
 						</div>
-						<div class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200">
+						<div class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
 							<aside class="widget">
-								<h2 class="widget-title">Company</h2>
-								<ul class="menu">
-									<li><a href="aboutcharaka.html">About Us</a></li>
-									<li><a href="partners.html">Partners</a></li>
-									<!-- <li><a href="contact-us.html">Contact Us</a></li> -->
-									<!-- <li><a href="">Our History</a></li> -->
-								</ul>
+								
 							</aside>
 						</div>
 						<div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
@@ -1092,7 +1231,7 @@
 									<li class="pbmit-list-item">
 										<span class="pbmit-list-item-inner">
 											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="tel:+9845140421">9845140421</a>
+												href="tel:+ 9845104042"> 9845104042</a>
 										</span>
 									</li>
 									<li class="pbmit-list-item">
@@ -1111,7 +1250,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tween-effect-style-1-wrap">
+				<!-- <div class="tween-effect-style-1-wrap">
 					<div class="pbmit-ele-tween-effect pbmit-tween-image pbmit-tween-effect-style-1">
 						<div class="pbmit-tween-effect charaka-brand" data-x-start="0" data-x-end="0" data-y-start="0"
 							data-y-end="0" data-scale-x-start="0.8" data-scale-x-end="1" data-skew-x-start="0deg"
@@ -1122,7 +1261,7 @@
 							<span class="charaka-text">CHARAKA</span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="pbmit-footer-text-area">
 				<div class="container">
@@ -1132,7 +1271,7 @@
 								<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
 							</div>
 							<div class="col-md-6 text-md-end text-center">
-								<span>Designed & Developed by Micro Webs </span>
+								<span>Designed & Developed by Micro Webz </span>
 							</div>
 						</div>
 					</div>
@@ -1212,6 +1351,14 @@
 	<script src="js/jquery-validate/jquery.validate.min.js"></script>
 	<!-- Scripts JS -->
 	<script src="js/scripts.js"></script>
+	<script>
+		window.addEventListener('load', function() {
+			var loader = document.getElementById('loader');
+			if (loader) {
+				loader.style.display = 'none';
+			}
+		});
+	</script>
 
 </body>
 

@@ -93,149 +93,157 @@
 			display: flex;
 			align-items: center;
 		}
+
 		/* Main card */
-.get-involved-box {
-    overflow: hidden;
-    padding: 40px 30px;
-}
+		.get-involved-box {
+			overflow: hidden;
+			padding: 40px 30px;
+		}
 
-/* Layout wrapper */
-.review-highlight-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    position: relative;
-    z-index: 2;
-}
+		/* Layout wrapper */
+		.review-highlight-wrap {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 30px;
+			position: relative;
+			z-index: 2;
+		}
 
-/* Text section */
-.review-highlight {
-    flex: 1;
-    z-index: 2;
-}
+		/* Text section */
+		.review-highlight {
+			flex: 1;
+			z-index: 2;
+		}
 
-.review-highlight .pbmit-title {
-    font-size: 42px !important;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: #29d9e5; /* optional */
-}
+		.review-highlight .pbmit-title {
+			font-size: 42px !important;
+			line-height: 1.2;
+			margin-bottom: 20px;
+			color: #29d9e5;
+			/* optional */
+		}
 
-.review-highlight .pbmit-desc {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
+		.review-highlight .pbmit-desc {
+			font-size: 18px;
+			line-height: 1.8;
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
 
-/* Image section */
-.testimonial-img-01 {
-    flex: 0 0 220px;
-    text-align: right;
-    z-index: 1;
-}
+		/* Image section */
+		.testimonial-img-01 {
+			flex: 0 0 220px;
+			text-align: right;
+			z-index: 1;
+		}
 
-.testimonial-img-01 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+		.testimonial-img-01 img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
 
-/* Button spacing */
-.pbmit-ihbox-btn .pbmit-btn {
-    display: inline-block;
-    margin-top: 10px;
-}
+		/* Button spacing */
+		.pbmit-ihbox-btn .pbmit-btn {
+			display: inline-block;
+			margin-top: 10px;
+		}
 
-/* ---------------- MOBILE FIX ---------------- */
-@media (max-width: 991px) {
-    .review-highlight-wrap {
-        flex-direction: column;
-        text-align: center;
-    }
+		/* ---------------- MOBILE FIX ---------------- */
+		@media (max-width: 991px) {
+			.review-highlight-wrap {
+				flex-direction: column;
+				text-align: center;
+			}
 
-    .testimonial-img-01 {
-        flex: unset;
-        text-align: center;
-        margin-top: 20px;
-    }
+			.testimonial-img-01 {
+				flex: unset;
+				text-align: center;
+				margin-top: 20px;
+			}
 
-    .testimonial-img-01 img {
-        max-width: 220px;
-        margin: 0 auto;
-    }
+			.testimonial-img-01 img {
+				max-width: 220px;
+				margin: 0 auto;
+			}
 
-    .review-highlight .pbmit-title {
-        font-size: 34px;
-    }
+			.review-highlight .pbmit-title {
+				font-size: 34px;
+			}
 
-    .review-highlight .pbmit-desc {
-        font-size: 16px;
-        line-height: 1.7;
-    }
-}
+			.review-highlight .pbmit-desc {
+				font-size: 16px;
+				line-height: 1.7;
+			}
+		}
 
-@media (max-width: 767px) {
-    .get-involved-box {
-        padding: 30px 20px;
-    }
+		@media (max-width: 767px) {
+			.get-involved-box {
+				padding: 30px 20px;
+			}
 
-    .review-highlight .pbmit-title {
-        font-size: 28px;
-        line-height: 1.2;
-    }
+			.review-highlight .pbmit-title {
+				font-size: 28px;
+				line-height: 1.2;
+			}
 
-    .review-highlight .pbmit-desc {
-        font-size: 15px;
-        line-height: 1.6;
-    }
+			.review-highlight .pbmit-desc {
+				font-size: 15px;
+				line-height: 1.6;
+			}
 
-    .testimonial-img-01 img {
-        max-width: 180px;
-    }
+			.testimonial-img-01 img {
+				max-width: 180px;
+			}
 
-    .pbmit-ihbox-btn .pbmit-btn {
-        width: 100%;
-        text-align: center;
-    }
-}
+			.pbmit-ihbox-btn .pbmit-btn {
+				width: 100%;
+				text-align: center;
+			}
+		}
 
-@media (max-width: 480px) {
-    .review-highlight .pbmit-title {
-        font-size: 24px;
-    }
+		@media (max-width: 480px) {
+			.review-highlight .pbmit-title {
+				font-size: 24px;
+			}
 
-    .review-highlight .pbmit-desc {
-        font-size: 14px;
-        line-height: 1.6;
-    }
+			.review-highlight .pbmit-desc {
+				font-size: 14px;
+				line-height: 1.6;
+			}
 
-    .testimonial-img-01 img {
-        max-width: 150px;
-    }
-}
+			.testimonial-img-01 img {
+				max-width: 150px;
+			}
+		}
 
-@media (max-width: 767px) {
-    .talent-contact-right .right-column {
-        margin-top: 30px;
-        height: 612px;
-		
-    }
-}
-	@media (max-width: 320px) {
-    .talent-contact-right .review-highlight .pbmit-desc {
-        color: #fff !important;
-    }
-}
-.pbmit-btn{
-        color: #fff !important;
-    background-color: #e08a2e !important;
-}
-.pbmit-team-style-1 .pbminfotech-team-position {
-color:#e08a2e !important;
-}
+		@media (max-width: 767px) {
+			.talent-contact-right .right-column {
+				margin-top: 30px;
+				height: 612px;
+
+			}
+		}
+
+		@media (max-width: 320px) {
+			.talent-contact-right .review-highlight .pbmit-desc {
+				color: #fff !important;
+			}
+		}
+
+		.pbmit-btn {
+			color: #fff !important;
+			background-color: #e08a2e !important;
+		}
+
+		.pbmit-team-style-1 .pbminfotech-team-position {
+			color: #e08a2e !important;
+		}
+		.pbmit-team-style-1 .pbmit-box-title-wrap {
+			height: 160px;
+		}
 	</style>
 </head>
 
@@ -249,7 +257,7 @@ color:#e08a2e !important;
 			<div class="pbmit-sticky-header pbmit-header-sticky-yes"></div>
 			<div class="pbmit-header-overlay">
 				<div class="pbmit-main-header-area pbmit-infostack-header">
-					 <div class="container-fluid">
+					<div class="container-fluid">
 						<div class="pbmit-header-content d-flex justify-content-between align-items-center gap-4">
 							<div class="pbmit-header-menu-area d-flex align-items-center justify-content-between">
 								<div class="pbmit-logo-area col-md-1 col-4">
@@ -270,28 +278,29 @@ color:#e08a2e !important;
 											<div class="pbmit-menu-wrap">
 												<ul class="navigation clearfix" id="pbmit-top-menu">
 
-													<li ><a href="index.html">Home</a></li>
+													<li><a href="index.html">Home</a></li>
 													<li class="dropdown active">
 														<a href="#">About Us <i
-                                                                class="fa fa-chevron-down fw-bold"></i></a>
+																class="fa fa-chevron-down fw-bold"></i></a>
 														<ul class="sub-menu">
 															<li><a href="aboutcharaka.html">About Charaka</a></li>
-															
-															<li><a href="boardofdirectors.html">Board of Directors</a></li>
+
+															<li><a href="boardofdirectors.html">Board of Directors</a>
+															</li>
 														</ul>
 													</li>
 													<li><a href="programs.html">Programs & Initiatives </a></li>
 													<li><a href="partners.html">Partners</a></li>
 													<li class="dropdown">
 														<a href="#">News & Updates<i
-                                                                class="fa fa-chevron-down fw-bold"></i></a>
+																class="fa fa-chevron-down fw-bold"></i></a>
 														<ul class="sub-menu">
-															<li><a href="news&updates.html">News & Updates</a></li>
-															
-															<li><a href="#">Tenders</a></li>
+															<li><a href="comingsoon.html">News & Updates</a></li>
+
+															<li><a href="comingsoon.html">Tenders</a></li>
 														</ul>
 													</li>
-													<li ><a href="contactus.html">Contact Us</a></li>
+													<li><a href="contactus.html">Contact Us</a></li>
 												</ul>
 											</div>
 										</nav>
@@ -322,12 +331,12 @@ color:#e08a2e !important;
 											</div>
 											<div class="pbmit-ihbox-contents p-3">
 												<h2 class="pbmit-element-title">
-													<a href="tel:9845140421">
-														<span class="pbmit-button-text">9845140421</span>
+													<a href="tel: 9845104042">
+														<span class="pbmit-button-text"> 9845104042</span>
 													</a>
 												</h2>
 											</div>
-											<a class="pbmit-link" href="tel:9845140421" title="Go to 9845140421"></a>
+											<a class="pbmit-link" href="tel: 9845104042" title="Go to  9845104042"></a>
 										</div>
 									</div>
 									<!-- <div class="pbmit-search-wrapper">
@@ -386,7 +395,8 @@ color:#e08a2e !important;
 							<div class="pbmit-breadcrumb-inner">
 								<span><a title="" href="index.html" class="home"><span>Home</span></a></span>
 								<span class="sep"><i class="pbmit-base-icon-next-1"></i></span>
-								<span><span class="post-root post post-post current-item">Board of Directors</span></span>
+								<span><span class="post-root post post-post current-item">Board of
+										Directors</span></span>
 							</div>
 						</div>
 						<div class="pbmit-tbar">
@@ -412,7 +422,7 @@ color:#e08a2e !important;
 									<div class="pbmit-featured-inner">
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/website/website/baskarimage.jpeg" class="img-fluid" alt="">
+												<img src="images/boardofdirectors/manjula.jpeg" class="img-fluid" alt="">
 											</div>
 										</div>
 										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
@@ -443,8 +453,8 @@ color:#e08a2e !important;
 									</div>
 								</div>
 								<div class="pbmit-box-title-wrap">
-									<h1 class="pbmit-team-title"><a href="#">Bhaskar</a></h1>
-									<div class="pbminfotech-team-position" >Founder & CEO</div>
+									<h1 class="pbmit-team-title"><a href="#">Dr. Manjula.N, IAS,</a></h1>
+									<div class="pbminfotech-team-position">Secretary to Government, Dept. of EI, IT,Bt and S&T, GoK</div>
 								</div>
 							</div>
 						</article>
@@ -454,7 +464,7 @@ color:#e08a2e !important;
 									<div class="pbmit-featured-inner">
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/website/website/baskarimage.jpeg" class="img-fluid" alt="">
+												<img src="images/boardofdirectors/rahul.jpeg" class="img-fluid" alt="">
 											</div>
 										</div>
 										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
@@ -485,8 +495,9 @@ color:#e08a2e !important;
 									</div>
 								</div>
 								<div class="pbmit-box-title-wrap">
-									<h1 class="pbmit-team-title"><a href="#">Sagar</a></h1>
-									<div class="pbminfotech-team-position" >Director</div>
+									<h1 class="pbmit-team-title"><a href="#">Mr. Rahul Sharanappa Sankanur IAS,</a></h1>
+									<div class="pbminfotech-team-position">Director, Dept. of E,IT and Bt, GoK and
+										Managing Director,KITS</div>
 								</div>
 							</div>
 						</article>
@@ -496,7 +507,8 @@ color:#e08a2e !important;
 									<div class="pbmit-featured-inner">
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/website/website/baskarimage.jpeg" class="img-fluid" alt="">
+												<img src="images/boardofdirectors/Prashanth Prakash.jpeg"
+													class="img-fluid" alt="">
 											</div>
 										</div>
 										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
@@ -527,8 +539,9 @@ color:#e08a2e !important;
 									</div>
 								</div>
 								<div class="pbmit-box-title-wrap">
-									<h1 class="pbmit-team-title"><a href="#">Sandeep</a></h1>
-									<div class="pbminfotech-team-position" >Director</div>
+									<h1 class="pbmit-team-title"><a href="#">Mr. Prashanth Prakash,</a></h1>
+									<div class="pbminfotech-team-position">Chairman, Karnataka Startup Vision Group
+									</div>
 								</div>
 							</div>
 						</article>
@@ -538,7 +551,8 @@ color:#e08a2e !important;
 									<div class="pbmit-featured-inner">
 										<div class="pbmit-featured-img-wrapper">
 											<div class="pbmit-featured-wrapper">
-												<img src="images/website/website/baskarimage.jpeg" class="img-fluid" alt="">
+												<img src="images/boardofdirectors/vijaychandru.jpeg" class="img-fluid"
+													alt="">
 											</div>
 										</div>
 										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
@@ -569,13 +583,187 @@ color:#e08a2e !important;
 									</div>
 								</div>
 								<div class="pbmit-box-title-wrap">
-									<h1 class="pbmit-team-title"><a href="#">Ravi</a></h1>
-									<div class="pbminfotech-team-position" >Director</div>
+									<h1 class="pbmit-team-title"><a href="#">Dr Vijay Chandru,</a></h1>
+									<div class="pbminfotech-team-position">Co founder and Director, Strand Life Sciences
+										| Commissioner,Lancet Citizen's Commission on reimageining India's health System
+									</div>
 								</div>
 							</div>
 						</article>
-					
-					
+						<article class="pbmit-team-style-1 col-md-6 col-lg-3">
+							<div class="pbminfotech-post-item">
+								<div class="pbmit-box-content">
+									<div class="pbmit-featured-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/boardofdirectors/Dr M Vijay Kumar.jpeg" class="img-fluid"
+													alt="">
+											</div>
+										</div>
+										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
+									</div>
+									<div class="pbmit-team-social">
+										<ul class="pbmit-social-links pbmit-team-social-links">
+											<li class="pbmit-social-li pbmit-social-facebook">
+												<a href="#" title="Facebook" target="_blank">
+													<span><i class="pbmit-base-icon-facebook-logo"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-twitter">
+												<a href="#" title="Twitter" target="_blank">
+													<span><i class="pbmit-base-icon-twitter-2"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-instagram">
+												<a href="#" title="Instagram" target="_blank">
+													<span><i class="pbmit-base-icon-instagram"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-youtube">
+												<a href="#" title="Youtube" target="_blank">
+													<span><i class="pbmit-base-icon-youtube-play"></i></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pbmit-box-title-wrap">
+									<h1 class="pbmit-team-title"><a href="#">Dr M Vijay Kumar,</a></h1>
+									<div class="pbminfotech-team-position">Pro Vice Chancellor, Yenepoya University</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-team-style-1 col-md-6 col-lg-3">
+							<div class="pbminfotech-post-item">
+								<div class="pbmit-box-content">
+									<div class="pbmit-featured-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/boardofdirectors/Dr K Ravi.jpeg" class="img-fluid"
+													alt="">
+											</div>
+										</div>
+										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
+									</div>
+									<div class="pbmit-team-social">
+										<ul class="pbmit-social-links pbmit-team-social-links">
+											<li class="pbmit-social-li pbmit-social-facebook">
+												<a href="#" title="Facebook" target="_blank">
+													<span><i class="pbmit-base-icon-facebook-logo"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-twitter">
+												<a href="#" title="Twitter" target="_blank">
+													<span><i class="pbmit-base-icon-twitter-2"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-instagram">
+												<a href="#" title="Instagram" target="_blank">
+													<span><i class="pbmit-base-icon-instagram"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-youtube">
+												<a href="#" title="Youtube" target="_blank">
+													<span><i class="pbmit-base-icon-youtube-play"></i></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pbmit-box-title-wrap">
+									<h1 class="pbmit-team-title"><a href="#">Dr K Ravi,</a></h1>
+									<div class="pbminfotech-team-position">Professor, BMCRI</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-team-style-1 col-md-6 col-lg-3">
+							<div class="pbminfotech-post-item">
+								<div class="pbmit-box-content">
+									<div class="pbmit-featured-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/boardofdirectors/Dr Bhagwan.jpeg" class="img-fluid"
+													alt="">
+											</div>
+										</div>
+										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
+									</div>
+									<div class="pbmit-team-social">
+										<ul class="pbmit-social-links pbmit-team-social-links">
+											<li class="pbmit-social-li pbmit-social-facebook">
+												<a href="#" title="Facebook" target="_blank">
+													<span><i class="pbmit-base-icon-facebook-logo"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-twitter">
+												<a href="#" title="Twitter" target="_blank">
+													<span><i class="pbmit-base-icon-twitter-2"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-instagram">
+												<a href="#" title="Instagram" target="_blank">
+													<span><i class="pbmit-base-icon-instagram"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-youtube">
+												<a href="#" title="Youtube" target="_blank">
+													<span><i class="pbmit-base-icon-youtube-play"></i></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pbmit-box-title-wrap">
+									<h1 class="pbmit-team-title"><a href="#">Dr Bhagwan,</a></h1>
+									<div class="pbminfotech-team-position">Vice Chancellor, RGUHS</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-team-style-1 col-md-6 col-lg-3">
+							<div class="pbminfotech-post-item">
+								<div class="pbmit-box-content">
+									<div class="pbmit-featured-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/boardofdirectors/Gurudatt Hegde.jpeg" class="img-fluid"
+													alt="">
+											</div>
+										</div>
+										<a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
+									</div>
+									<div class="pbmit-team-social">
+										<ul class="pbmit-social-links pbmit-team-social-links">
+											<li class="pbmit-social-li pbmit-social-facebook">
+												<a href="#" title="Facebook" target="_blank">
+													<span><i class="pbmit-base-icon-facebook-logo"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-twitter">
+												<a href="#" title="Twitter" target="_blank">
+													<span><i class="pbmit-base-icon-twitter-2"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-instagram">
+												<a href="#" title="Instagram" target="_blank">
+													<span><i class="pbmit-base-icon-instagram"></i></span>
+												</a>
+											</li>
+											<li class="pbmit-social-li pbmit-social-youtube">
+												<a href="#" title="Youtube" target="_blank">
+													<span><i class="pbmit-base-icon-youtube-play"></i></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="pbmit-box-title-wrap">
+									<h1 class="pbmit-team-title"><a href="#">Gurudatt Hegde, IAS,</a></h1>
+									<div class="pbminfotech-team-position">Commissioner, Department of Health and Family Welfare, GoK</div>
+								</div>
+							</div>
+						</article>
+
+
 					</div>
 				</div>
 			</section>
@@ -591,7 +779,7 @@ color:#e08a2e !important;
 					<div class="row">
 						<div class="pbmit-footer-widget-col-1 col-md-4 left-column">
 							<div class="left-area animated animation fadeInUp">
-								<h2 class="pbmit-subtitle">CHARAKA </h2>
+								<h2 class="pbmit-subtitle d-flex flex-row align-items-center"><img src="images/website/website/charakalogo.png" class="charaka-logo" alt="Charaka Logo"> <span class="fs-5 text-white">CHARAKA</span> </h2>
 								<h2 class="pbmit-title">Building India’s Future
 									Health Innovation Engine.</h2>
 								<form>
@@ -631,28 +819,23 @@ color:#e08a2e !important;
 								</div>
 							</div>
 						</div>
-						<div class="pbmit-footer-widget-col-2 col-md-2 animated animation fadeInUp animation-delay-100">
+						<div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
 							<aside class="widget">
 								<h2 class="widget-title">Menu</h2>
 								<ul class="menu">
 									<li><a href="index.html">Home</a></li>
-									<!-- <li><a href="">About Us</a></li> -->
-									<li><a href="programs.html">Programs & <br> Initiatives</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+									<li><a href="partners.html">Partners</a></li>
+									<li><a href="tenders.html">Tenders</a></li>
+									<li><a href="programs.html">Programs &  Initiatives</a></li>
 									<!-- <li><a href="">Partners</a></li> -->
-									<li><a href="news&updates.html">News & Updates</a></li>
 									<li><a href="contactus.html">Contact Us</a></li>
 								</ul>
 							</aside>
 						</div>
-						<div class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200">
+						<div class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
 							<aside class="widget">
-								<h2 class="widget-title">Company</h2>
-								<ul class="menu">
-									<li><a href="aboutcharaka.html">About Us</a></li>
-									<li><a href="partners.html">Partners</a></li>
-									<!-- <li><a href="contact-us.html">Contact Us</a></li> -->
-									<!-- <li><a href="">Our History</a></li> -->
-								</ul>
+								
 							</aside>
 						</div>
 						<div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
@@ -662,7 +845,7 @@ color:#e08a2e !important;
 									<li class="pbmit-list-item">
 										<span class="pbmit-list-item-inner">
 											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="tel:+9845140421">9845140421</a>
+												href="tel:+ 9845104042"> 9845104042</a>
 										</span>
 									</li>
 									<li class="pbmit-list-item">
@@ -681,7 +864,7 @@ color:#e08a2e !important;
 						</div>
 					</div>
 				</div>
-				<div class="tween-effect-style-1-wrap">
+				<!-- <div class="tween-effect-style-1-wrap">
 					<div class="pbmit-ele-tween-effect pbmit-tween-image pbmit-tween-effect-style-1">
 						<div class="pbmit-tween-effect charaka-brand" data-x-start="0" data-x-end="0" data-y-start="0"
 							data-y-end="0" data-scale-x-start="0.8" data-scale-x-end="1" data-skew-x-start="0deg"
@@ -692,7 +875,7 @@ color:#e08a2e !important;
 							<span class="charaka-text">CHARAKA</span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="pbmit-footer-text-area">
 				<div class="container">
@@ -702,7 +885,7 @@ color:#e08a2e !important;
 								<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
 							</div>
 							<div class="col-md-6 text-md-end text-center">
-								<span>Designed & Developed by Micro Webs </span>
+								<span>Designed & Developed by Micro Webz </span>
 							</div>
 						</div>
 					</div>

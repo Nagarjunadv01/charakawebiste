@@ -41,7 +41,7 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 	<style>
 		.pbmit-slider-one .pbmit-slider-title {
 			font-size: 90px !important;
@@ -233,10 +233,130 @@
         color: #fff !important;
     background-color: #e08a2e !important;
 }
+
+
+
+/* =========================
+           SPRING ROUND LOADER
+        ========================== */
+        .spring-loader-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            animation: fadeIn 0.25s ease-in-out;
+        }
+
+        .spring-round-loader-box {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow:
+                0 15px 40px rgba(255, 182, 193, 0.18),
+                inset 0 1px 8px rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: popIn 0.3s ease;
+        }
+
+        .loader-title {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #4b5563;
+            margin-bottom: 5px;
+            letter-spacing: 0.4px;
+        }
+
+        .loader-subtitle {
+            font-size: 14px;
+            color: #7b8a7b;
+            margin-bottom: 0;
+        }
+
+        .spring-bloom-loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .spring-bloom-loader span {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: inline-block;
+            animation: bloomBounce 0.9s infinite ease-in-out;
+            box-shadow: 0 6px 16px rgba(255, 182, 193, 0.25);
+        }
+
+        .spring-bloom-loader span:nth-child(1) {
+            background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
+            animation-delay: 0s;
+        }
+
+        .spring-bloom-loader span:nth-child(2) {
+            background: linear-gradient(135deg, #86efac, #bbf7d0);
+            animation-delay: 0.18s;
+        }
+
+        .spring-bloom-loader span:nth-child(3) {
+            background: linear-gradient(135deg, #fcd34d, #fde68a);
+            animation-delay: 0.36s;
+        }
+
+        @keyframes bloomBounce {
+            0%, 80%, 100% {
+                transform: scale(0.85) translateY(0);
+                opacity: 0.75;
+            }
+            40% {
+                transform: scale(1.15) translateY(-10px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.92);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
 	</style>
 </head>
 
 <body>
+
+	<!-- Page Loader -->
+	<div id="loader" class="spring-loader-overlay">
+		<div class="spring-round-loader-box">
+			<div class="spring-bloom-loader">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<h5 class="loader-title">CHARAKA</h5>
+			<p class="loader-subtitle">Please wait...</p>
+		</div>
+	</div>
 
 	<!-- page wrapper -->
 	<div class="page-wrapper" id="page">
@@ -265,31 +385,23 @@
 										<nav class="main-navigation pbmit-navbar main-menu navbar-expand-xl navbar-light"
 											id="site-navigation">
 											<div class="pbmit-menu-wrap">
-												<ul class="navigation clearfix" id="pbmit-top-menu">
+												  <ul class="navigation clearfix" id="pbmit-top-menu">
 
-													<li ><a href="index.html">Home</a></li>
-													<li class="dropdown ">
-														<a href="#">About Us <i
-                                                                class="fa fa-chevron-down fw-bold"></i></a>
-														<ul class="sub-menu">
-															<li><a href="aboutcharaka.html">About Charaka</a></li>
-															
-															<li><a href="boardofdirectors.html">Board of Directors</a></li>
-														</ul>
-													</li>
-													<li><a href="programs.html">Programs & Initiatives </a></li>
-													<li><a href="partners.html">Partners</a></li>
-													<li class="dropdown">
-														<a href="#">News & Updates<i
-                                                                class="fa fa-chevron-down fw-bold"></i></a>
-														<ul class="sub-menu">
-															<li><a href="news&updates.html">News & Updates</a></li>
-															
-															<li><a href="#">Tenders</a></li>
-														</ul>
-													</li>
-													<li ><a href="contactus.html">Contact Us</a></li>
-												</ul>
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="aboutus.html">About Us </a></li>
+
+                                                    <li><a href="programs.html">Programs & Initiatives </a></li>
+                                                    <li><a href="partners.html">Partners</a></li>
+                                                    <li class="dropdown">
+                                                        <a href="#">News & Updates</a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="comingsoon.html">News & Updates</a></li>
+
+                                                            <li><a href="tenders.html">Tenders</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="contactus.html">Contact Us</a></li>
+                                                </ul>
 											</div>
 										</nav>
 									</div>
@@ -319,12 +431,12 @@
 											</div>
 											<div class="pbmit-ihbox-contents p-3">
 												<h2 class="pbmit-element-title">
-													<a href="tel:9845140421">
-														<span class="pbmit-button-text">9845140421</span>
+													<a href="tel: 9845104042">
+														<span class="pbmit-button-text"> 9845104042</span>
 													</a>
 												</h2>
 											</div>
-											<a class="pbmit-link" href="tel:9845140421" title="Go to 9845140421"></a>
+											<a class="pbmit-link" href="tel: 9845104042" title="Go to  9845104042"></a>
 										</div>
 									</div>
 									<!-- <div class="pbmit-search-wrapper">
@@ -383,7 +495,7 @@
 							<div class="pbmit-breadcrumb-inner">
 								<span><a title="" href="index.html" class="home"><span>Home</span></a></span>
 								<span class="sep"><i class="pbmit-base-icon-next-1"></i></span>
-								<span><span class="post-root post post-post current-item">Coming Soon</span></span>
+								<span><span class="post-root post post-post current-item">News & Updates</span></span>
 							</div>
 						</div>
 						<div class="pbmit-tbar">
@@ -401,14 +513,14 @@
                     </div>
                     </section>
 
-		<!-- footer -->
+			<!-- footer -->
 		<footer class="site-footer pbmit-footer-style-1">
 			<div class="container">
 				<div class="pbmit-footer-widget-area">
 					<div class="row">
 						<div class="pbmit-footer-widget-col-1 col-md-4 left-column">
 							<div class="left-area animated animation fadeInUp">
-								<h2 class="pbmit-subtitle">CHARAKA </h2>
+								<h2 class="pbmit-subtitle d-flex flex-row align-items-center"><img src="images/website/website/charakalogo.png" class="charaka-logo" alt="Charaka Logo"> <span class="fs-5 text-white">CHARAKA</span> </h2>
 								<h2 class="pbmit-title">Building India’s Future
 									Health Innovation Engine.</h2>
 								<form>
@@ -425,22 +537,22 @@
 								<div class="social-links-wrap">
 									<ul class="pbmit-social-links">
 										<li class="pbmit-social-li pbmit-social-facebook">
-											<a title="Facebook" href="" target="_blank">
-												<span><i class="pbmit-base-icon-facebook-logo"></i></span>
+											<a title="Facebook" class="fs-5"  target="_blank">
+												<span ><i class="pbmit-base-icon-facebook-logo"></i></span>
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-twitter">
-											<a title="Twitter" href="" target="_blank">
+											<a title="Twitter" class="fs-5"  target="_blank">
 												<span><i class="pbmit-base-icon-twitter-2"></i></span>
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-instagram">
-											<a title="Instagram" href="" target="_blank">
+											<a title="Instagram" class="fs-4"  target="_blank">
 												<span><i class="pbmit-base-icon-instagram"></i></span>
 											</a>
 										</li>
 										<li class="pbmit-social-li pbmit-social-youtube">
-											<a title="Youtube" href="" target="_blank">
+											<a title="Youtube" class="fs-4"  target="_blank">
 												<span><i class="pbmit-base-icon-youtube-play"></i></span>
 											</a>
 										</li>
@@ -448,28 +560,23 @@
 								</div>
 							</div>
 						</div>
-						<div class="pbmit-footer-widget-col-2 col-md-2 animated animation fadeInUp animation-delay-100">
+						<div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
 							<aside class="widget">
 								<h2 class="widget-title">Menu</h2>
 								<ul class="menu">
 									<li><a href="index.html">Home</a></li>
-									<!-- <li><a href="">About Us</a></li> -->
-									<li><a href="programs.html">Programs & <br> Initiatives</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+									<li><a href="partners.html">Partners</a></li>
+									<li><a href="tenders.html">Tenders</a></li>
+									<li><a href="programs.html">Programs &  Initiatives</a></li>
 									<!-- <li><a href="">Partners</a></li> -->
-									<li><a href="news&updates.html">News & Updates</a></li>
 									<li><a href="contactus.html">Contact Us</a></li>
 								</ul>
 							</aside>
 						</div>
-						<div class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200">
+						<div class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
 							<aside class="widget">
-								<h2 class="widget-title">Company</h2>
-								<ul class="menu">
-									<li><a href="aboutcharaka.html">About Us</a></li>
-									<li><a href="partners.html">Partners</a></li>
-									<!-- <li><a href="contact-us.html">Contact Us</a></li> -->
-									<!-- <li><a href="">Our History</a></li> -->
-								</ul>
+								
 							</aside>
 						</div>
 						<div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
@@ -478,27 +585,31 @@
 								<ul class="pbmit-list-items">
 									<li class="pbmit-list-item">
 										<span class="pbmit-list-item-inner">
-											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="tel:+9845140421">9845140421</a>
+										<a class="pbmit-list-item-link pbmit-list-item-title" href="tel:+9845104042">
+    <i class="fas fa-phone me-1"></i> 9845104042
+</a>
 										</span>
 									</li>
 									<li class="pbmit-list-item">
 										<span class="pbmit-list-item-inner">
-											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="mailto:charaka@gmail.com">charaka@gmail.com</a>
+											<a class="pbmit-list-item-link pbmit-list-item-title" href="mailto:charaka@gmail.com">
+    <i class="fas fa-envelope me-1"></i> charaka@gmail.com
+</a>
 										</span>
 									</li>
 									<li class="pbmit-list-item">
-										<span class="pbmit-list-item-inner">
-											<span class="pbmit-list-item-title">Bengaluru, India</span>
-										</span>
+									<span class="pbmit-list-item-inner">
+    <span class="pbmit-list-item-title">
+        <i class="fas fa-map-marker-alt me-1"></i> Bengaluru, India
+    </span>
+</span>
 									</li>
 								</ul>
 							</aside>
 						</div>
 					</div>
 				</div>
-				<div class="tween-effect-style-1-wrap">
+				<!-- <div class="tween-effect-style-1-wrap">
 					<div class="pbmit-ele-tween-effect pbmit-tween-image pbmit-tween-effect-style-1">
 						<div class="pbmit-tween-effect charaka-brand" data-x-start="0" data-x-end="0" data-y-start="0"
 							data-y-end="0" data-scale-x-start="0.8" data-scale-x-end="1" data-skew-x-start="0deg"
@@ -509,7 +620,7 @@
 							<span class="charaka-text">CHARAKA</span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<div class="pbmit-footer-text-area">
 				<div class="container">
@@ -519,7 +630,7 @@
 								<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
 							</div>
 							<div class="col-md-6 text-md-end text-center">
-								<span>Designed & Developed by Micro Webs </span>
+								<span>Designed & Developed by Microwebz </span>
 							</div>
 						</div>
 					</div>
@@ -599,6 +710,14 @@
 	<script src="js/jquery-validate/jquery.validate.min.js"></script>
 	<!-- Scripts JS -->
 	<script src="js/scripts.js"></script>
+	<script>
+		window.addEventListener('load', function() {
+			var loader = document.getElementById('loader');
+			if (loader) {
+				loader.style.display = 'none';
+			}
+		});
+	</script>
 
 </body>
 

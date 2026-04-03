@@ -41,7 +41,7 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 	<style>
 		.pbmit-slider-one .pbmit-slider-title {
 			font-size: 90px !important;
@@ -85,17 +85,18 @@
 				margin-bottom: 35px;
 				color: var(--pbmit-white-color);
 			}
-			
+
 			.about-one-section {
 				padding: 0px 5px 0 15px !important;
 			}
+
 			.pbmit-marquee-effect-style-1 .pbmit-element-title {
-    font-size: 53px !important;
-    line-height: 150px;
-}
+				font-size: 53px !important;
+				line-height: 150px;
+			}
 
 			.pbmit-portfolio-style-2.pbmit-active .pbminfotech-post-content {
-				height: 500px;
+				height: 400px;
 			}
 
 			.pbmit-title1 {
@@ -177,133 +178,147 @@
 			gap: 5px;
 			margin-right: 1px !important;
 		}
-		.pbmit-btn{
+
+		.pbmit-btn {
 			background-color: #e08a2e;
 		}
+
 		@media (max-width: 991px) {
-    .service-section-one .service-arrow {
-        display: flex !important;
-    }
-}
+			.service-section-one .service-arrow {
+				display: flex !important;
+			}
+		}
 
 
 
-/* =========================
+		/* =========================
            SPRING ROUND LOADER
         ========================== */
-        .spring-loader-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(255, 255, 255, 0.45);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 99999;
-            animation: fadeIn 0.25s ease-in-out;
-        }
+		.spring-loader-overlay {
+			position: fixed;
+			inset: 0;
+			background: rgba(255, 255, 255, 0.45);
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 99999;
+			animation: fadeIn 0.25s ease-in-out;
+		}
 
-        .spring-round-loader-box {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.78);
-            border: 1px solid rgba(255, 255, 255, 0.55);
-            box-shadow:
-                0 15px 40px rgba(255, 182, 193, 0.18),
-                inset 0 1px 8px rgba(255, 255, 255, 0.6);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            animation: popIn 0.3s ease;
-        }
+		.spring-round-loader-box {
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.78);
+			border: 1px solid rgba(255, 255, 255, 0.55);
+			box-shadow:
+				0 15px 40px rgba(255, 182, 193, 0.18),
+				inset 0 1px 8px rgba(255, 255, 255, 0.6);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			animation: popIn 0.3s ease;
+		}
 
-        .loader-title {
-            margin-top: 20px;
-            font-size: 22px;
-            font-weight: 700;
-            color: #4b5563;
-            margin-bottom: 5px;
-            letter-spacing: 0.4px;
-        }
+		.loader-title {
+			margin-top: 20px;
+			font-size: 22px;
+			font-weight: 700;
+			color: #4b5563;
+			margin-bottom: 5px;
+			letter-spacing: 0.4px;
+		}
 
-        .loader-subtitle {
-            font-size: 14px;
-            color: #7b8a7b;
-            margin-bottom: 0;
-        }
+		.loader-subtitle {
+			font-size: 14px;
+			color: #7b8a7b;
+			margin-bottom: 0;
+		}
 
-        .spring-bloom-loader {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-        }
+		.spring-bloom-loader {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
+		}
 
-        .spring-bloom-loader span {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            display: inline-block;
-            animation: bloomBounce 0.9s infinite ease-in-out;
-            box-shadow: 0 6px 16px rgba(255, 182, 193, 0.25);
-        }
+		.spring-bloom-loader span {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			display: inline-block;
+			animation: bloomBounce 0.9s infinite ease-in-out;
+			box-shadow: 0 6px 16px rgba(255, 182, 193, 0.25);
+		}
 
-        .spring-bloom-loader span:nth-child(1) {
-            background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
-            animation-delay: 0s;
-        }
+		.spring-bloom-loader span:nth-child(1) {
+			background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
+			animation-delay: 0s;
+		}
 
-        .spring-bloom-loader span:nth-child(2) {
-            background: linear-gradient(135deg, #86efac, #bbf7d0);
-            animation-delay: 0.18s;
-        }
+		.spring-bloom-loader span:nth-child(2) {
+			background: linear-gradient(135deg, #86efac, #bbf7d0);
+			animation-delay: 0.18s;
+		}
 
-        .spring-bloom-loader span:nth-child(3) {
-            background: linear-gradient(135deg, #fcd34d, #fde68a);
-            animation-delay: 0.36s;
-        }
+		.spring-bloom-loader span:nth-child(3) {
+			background: linear-gradient(135deg, #fcd34d, #fde68a);
+			animation-delay: 0.36s;
+		}
 
-        @keyframes bloomBounce {
-            0%, 80%, 100% {
-                transform: scale(0.85) translateY(0);
-                opacity: 0.75;
-            }
-            40% {
-                transform: scale(1.15) translateY(-10px);
-                opacity: 1;
-            }
-        }
+		@keyframes bloomBounce {
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+			0%,
+			80%,
+			100% {
+				transform: scale(0.85) translateY(0);
+				opacity: 0.75;
+			}
 
-        @keyframes popIn {
-            from {
-                transform: scale(0.92);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        
-        @media (max-width: 1024px) {
-    .pbmit-slider-one .pbmit-slider-content .pbmit-slider-btn {
-        padding: 35px 0 0 0;
-        width: 95px;
-        height: 95px;
-        font-size: 10px;
-        line-height: 14px;
-    }
-}
+			40% {
+				transform: scale(1.15) translateY(-10px);
+				opacity: 1;
+			}
+		}
 
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
 
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes popIn {
+			from {
+				transform: scale(0.92);
+				opacity: 0;
+			}
+
+			to {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+
+		@media (max-width: 1024px) {
+			.pbmit-slider-one .pbmit-slider-content .pbmit-slider-btn {
+				padding: 35px 0 0 0;
+				width: 95px;
+				height: 95px;
+				font-size: 10px;
+				line-height: 14px;
+			}
+		}
+
+		.facus-key {
+			height: 80px;
+		}
 	</style>
 </head>
 
@@ -848,7 +863,7 @@
 							<!-- Slide1 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">HealthTech & MedTech</a>
@@ -862,8 +877,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/healthtech&medtech.jpeg"
-														class="" alt="">
+													<img src="images/focus/healthtech&medtech.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="#" title="Go to Alternative Energy"></a>
@@ -875,7 +889,7 @@
 							<!-- Slide2 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">Assistive Technology</a>
@@ -889,8 +903,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/assitivetechnology.jpeg"
-														class="" alt="">
+													<img src="images/focus/assitivetechnology.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="#" title="Go to Pathology Testing"></a>
@@ -899,10 +912,10 @@
 									</div>
 								</div>
 							</article>
-								<!-- Slide6 -->
+							<!-- Slide6 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">Knowledge and Capacity Building</a>
@@ -916,8 +929,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/learning&capacity.jpeg"
-														class="" alt="">
+													<img src="images/focus/learning&capacity.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="#" title="Go to Healthcare Labs"></a>
@@ -926,10 +938,10 @@
 									</div>
 								</div>
 							</article>
-								<!-- Slide4 -->
+							<!-- Slide4 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">Translational Research</a>
@@ -943,8 +955,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/translationalreaserch.jpeg"
-														class="" alt="">
+													<img src="images/focus/translationalreaserch.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="#" title="Go to Microbiology Tests"></a>
@@ -956,7 +967,7 @@
 							<!-- Slide7 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">Clinical</a>
@@ -970,8 +981,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/clinical.jpeg"
-														class="" alt="">
+													<img src="images/focus/clinical.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="#" title="Go to Healthcare Labs"></a>
@@ -980,11 +990,11 @@
 									</div>
 								</div>
 							</article>
-							
+
 							<!-- Slide3 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">AI & Digital Health</a>
@@ -998,8 +1008,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/ai&digital.jpeg"
-														class="" alt="">
+													<img src="images/focus/ai&digital.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="#" title="Go to Advanced Robotics"></a>
@@ -1008,11 +1017,11 @@
 									</div>
 								</div>
 							</article>
-						
+
 							<!-- Slide5 -->
 							<article class="pbmit-service-style-1 swiper-slide">
 								<div class="pbminfotech-post-item">
-									<div class="pbmit-content-box">
+									<div class="pbmit-content-box facus-key d-flex flex-column justify-content-center">
 										<div class="pbmit-content-wrap">
 											<h3 class="pbmit-service-title">
 												<a href="#">Public Health Innovation</a>
@@ -1026,8 +1035,7 @@
 										<div class="pbmit-hover-wrap">
 											<div class="pbmit-featured-img-wrapper">
 												<div class="pbmit-featured-wrapper">
-													<img src="images/focus/publichealth.jpeg"
-														class="" alt="">
+													<img src="images/focus/publichealth.jpeg" class="" alt="">
 												</div>
 											</div>
 											<a class="pbmit-link" href="service-details.html"
@@ -1037,7 +1045,7 @@
 									</div>
 								</div>
 							</article>
-						
+
 
 						</div>
 					</div>
@@ -1327,7 +1335,7 @@
 												</div>
 												<div class="pbmit-ihbox-contents">
 													<h2 class="pbmit-element-title">
-														CHARAKA is actively engaging with:
+														CHARAKA is actively <br>engaging with:
 													</h2>
 													<div class="pbmit-heading-desc">
 														<ul style="list-style-type: disc; padding-left: 20px;">
@@ -1389,7 +1397,7 @@
 													<h2 class="pbmit-element-title">
 														Where are we now?
 													</h2>
-													<P class="text-white" >CHARAKA is currently in its setup & <br>
+													<P class="text-white">CHARAKA is currently in its setup & <br>
 														ecosystem-building phase, with focus on:</P>
 													<div class="pbmit-heading-desc">
 														<ul style="list-style-type: disc; padding-left: 20px;">
@@ -1523,11 +1531,12 @@
 								<div class="pbminfotech-post-content">
 									<div class="pbmit-box-content">
 										<h3 class="pbmit-portfolio-title">
-											<a href="#">Key Gaps Being Addressed</a>
+											<a>Key Gaps Being Addressed</a>
+
 										</h3>
 										<div class="pbmit-port-cat">
-											<a href="#" rel="tag">AI </a#>
-												<a href="" rel="tag">MedTech</a>
+											<a href="#" rel="tag">AI </a>
+											<a href="" rel="tag">MedTech</a>
 										</div>
 										<div class="pbmit-btn-wrap"></div>
 									</div>
@@ -1557,7 +1566,7 @@
 								<div class="pbminfotech-post-content">
 									<div class="pbmit-box-content">
 										<h3 class="pbmit-portfolio-title">
-											<a href="#">Planned Areas of Work</a>
+											<a>Planned Areas of Work</a>
 										</h3>
 										<div class="pbmit-port-cat">
 											<a href="#" rel="tag">Clinician innovators</a>
@@ -1591,7 +1600,7 @@
 								<div class="pbminfotech-post-content">
 									<div class="pbmit-box-content">
 										<h3 class="pbmit-portfolio-title">
-											<a href="#">Illustrative Use Cases</a>
+											<a>Illustrative Use Cases</a>
 										</h3>
 										<div class="pbmit-port-cat">
 											<a href="#" rel="tag">MedTech </a>
@@ -1649,21 +1658,21 @@
 					<div class="pbmit-heading-subheading text-md-center animation-style3">
 						<h2 class="pbmit-subtitle">we’re proud to partner with best-in-class clients</h2>
 					</div>
-					<div class="swiper-slider" data-autoplay="true" data-allow-touch="true" data-loop="true"
-						data-dots="false" data-arrows="false" data-columns="6" data-margin="5" data-effect="slide">
+					<div class="swiper-slider" data-autoplay="true" data-autoplayspeed="2000" data-allow-touch="true"
+						data-loop="true" data-dots="false" data-arrows="false" data-columns="4" data-margin="5"
+						data-effect="slide">
 						<div class="swiper-wrapper">
 							<!-- Slide1 -->
-							<article class="pbmit-client-style-1 swiper-slide">
+							<article class="pbmit-client-style-1 swiper-slide col-md-3 col-12">
 								<div class="pbmit-client-content">
-									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
-										<div class="pbmit-client-hover-img">
-											<img src="images/partners/itbtgok_logo-removebg-preview.png" width="100%"
-												alt="Department of IT & BT Govt of Karnataka">
-											<!-- <p class="text-dark mb-0"><b>Department of IT & BT Govt of Karnataka</b></p> -->
-										</div>
+									<div class="pbmit-client-wrapper">
 										<div class="pbmit-featured-img-wrapper">
-											<div class="pbmit-featured-wrapper">
+											<div class="pbmit-client-hover-img">
+												<img src="images/partners/itbtgok_logo-removebg-preview.png"
+													width="100%" alt="Department of IT & BT Govt of Karnataka">
 												<!-- <p class="text-dark mb-0"><b>Department of IT & BT Govt of Karnataka</b></p> -->
+											</div>
+											<div class="pbmit-featured-wrapper">
 												<img src="images/partners/itbtgok_logo-removebg-preview.png"
 													width="100%" alt="Department of IT & BT Govt of Karnataka">
 											</div>
@@ -1672,64 +1681,63 @@
 								</div>
 							</article>
 							<!-- Slide2 -->
-							<article class="pbmit-client-style-1 swiper-slide">
+							<article class="pbmit-client-style-1 swiper-slide col-md-3 col-12">
 								<div class="pbmit-client-content">
-									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
-										<div class="pbmit-client-hover-img">
-											<img src="images/partners/KITSlogo.png" width="100%" alt="KITS">
-											<!-- <p class="text-dark mb-0"><b>KITS</b></p> -->
-										</div>
+									<div class="pbmit-client-wrapper">
 										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-client-hover-img">
+												<img src="images/partners/KITSlogo.png" width="100%" alt="KITS">
+												<!-- <p class="text-dark mb-0"><b>KITS</b></p> -->
+											</div>
 											<div class="pbmit-featured-wrapper">
 												<img src="images/partners/KITSlogo.png" width="100%" class="img-fluid"
 													alt="KITS">
-												<!-- <p class="text-dark mb-0"><b>KITS</b></p> -->
 											</div>
 										</div>
 									</div>
 								</div>
 							</article>
 							<!-- Slide3 -->
-							<article class="pbmit-client-style-1 swiper-slide">
+							<article class="pbmit-client-style-1 swiper-slide col-md-3 col-12">
 								<div class="pbmit-client-content">
-									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
-										<div class="pbmit-client-hover-img">
-											<img src="images/partners/Innovate_Karnatakalogo.png" width="100%"
-												alt="Innovate Karnataka">
-											<!-- <p class="text-dark mb-0"><b>Innovate Karnataka</b></p> -->
-										</div>
+									<div class="pbmit-client-wrapper">
 										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-client-hover-img">
+												<img src="images/partners/Innovate_Karnatakalogo.png" width="100%"
+													alt="Innovate Karnataka">
+												<!-- <p class="text-dark mb-0"><b>Innovate Karnataka</b></p> -->
+											</div>
 											<div class="pbmit-featured-wrapper">
 												<img src="images/partners/Innovate_Karnatakalogo.png" width="100%"
 													class="img-fluid" alt="Innovate Karnataka">
-												<!-- <p class="text-dark mb-0"><b>Innovate Karnataka</b></p> -->
 											</div>
 										</div>
 									</div>
 								</div>
 							</article>
 							<!-- Slide4 -->
-							<article class="pbmit-client-style-1 swiper-slide">
+							<article class="pbmit-client-style-1 swiper-slide col-md-3 col-12">
 								<div class="pbmit-client-content">
-									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
-										<div class="pbmit-client-hover-img">
-											<img src="images/partners/StartupKarnatakalogo.png" width="100%"
-												alt="Startup Karnataka">
-											<!-- <p class="text-dark mb-0"><b>Startup Karnataka</b></p> -->
-										</div>
+									<div class="pbmit-client-wrapper">
 										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-client-hover-img">
+												<img src="images/partners/StartupKarnatakalogo.png" width="100%"
+													alt="Startup Karnataka">
+												<!-- <p class="text-dark mb-0"><b>Startup Karnataka</b></p> -->
+											</div>
 											<div class="pbmit-featured-wrapper">
 												<img src="images/partners/StartupKarnatakalogo.png" width="100%"
 													class="img-fluid" alt="Startup Karnataka">
-												<!-- <p class="text-dark mb-0"><b>Startup Karnatakaa</b></p> -->
 											</div>
 										</div>
 									</div>
 								</div>
 							</article>
+						</div>
+					</div>
 
-							<!-- Slide5 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide5 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1744,8 +1752,8 @@
 									</div>
 								</div>
 							</article> -->
-							<!-- Slide6 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide6 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1762,8 +1770,8 @@
 									</div>
 								</div>
 							</article> -->
-							<!-- Slide7 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide7 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1780,8 +1788,8 @@
 									</div>
 								</div>
 							</article> -->
-							<!-- Slide8 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide8 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1799,8 +1807,8 @@
 									</div>
 								</div>
 							</article> -->
-							<!-- Slide9 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide9 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1818,8 +1826,8 @@
 									</div>
 								</div>
 							</article> -->
-							<!-- Slide10 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide10 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1836,8 +1844,8 @@
 									</div>
 								</div>
 							</article> -->
-							<!-- Slide11 -->
-							<!-- <article class="pbmit-client-style-1 swiper-slide">
+					<!-- Slide11 -->
+					<!-- <article class="pbmit-client-style-1 swiper-slide">
 								<div class="pbmit-client-content">
 									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
 										<div class="pbmit-client-hover-img">
@@ -1854,117 +1862,116 @@
 								</div>
 							</article> -->
 
-						</div>
-					</div>
 				</div>
-			</section>
-			<!-- Client End -->
-
 		</div>
-		<!-- page content End -->
+	</div>
+	</section>
+	<!-- Client End -->
+
+	</div>
+	<!-- page content End -->
 
 	<!-- footer -->
-		<footer class="site-footer pbmit-footer-style-1">
-			<div class="container">
-				<div class="pbmit-footer-widget-area">
-					<div class="row">
-						<div class="pbmit-footer-widget-col-1 col-md-4 left-column">
-							<div class="left-area animated animation fadeInUp">
-								<h2 class="pbmit-subtitle d-flex flex-row align-items-center"><img
-										src="images/website/website/charakalogo.png" class="charaka-logo"
-										alt="Charaka Logo"> <span class="fs-5 text-white">CHARAKA</span> </h2>
-								<h2 class="pbmit-title">Building India’s Future
-									Health Innovation Engine.</h2>
-								<form>
-									<div class="pbmit-footer-newsletter">
-										<div class="pbmit-news-wrap">
-											<input type="email" name="EMAIL" placeholder="Your Email Address"
-												class="form-control" required="">
-											<button class="pbmit-form-btn">
-												<i class="pbmit-base-icon-paper-plane"></i>
-											</button>
-										</div>
+	<footer class="site-footer pbmit-footer-style-1">
+		<div class="container">
+			<div class="pbmit-footer-widget-area">
+				<div class="row">
+					<div class="pbmit-footer-widget-col-1 col-md-4 left-column">
+						<div class="left-area animated animation fadeInUp">
+							<h2 class="pbmit-subtitle d-flex flex-row align-items-center gap-1"><img
+									src="images/website/website/charakafooterimage.png" class="charaka-logo"
+									alt="Charaka Logo"> <span class="fs-4 text-white">CHARAKA</span> </h2>
+							<h2 class="pbmit-title">Building India’s Future
+								Health Innovation Engine.</h2>
+							<form>
+								<div class="pbmit-footer-newsletter">
+									<div class="pbmit-news-wrap">
+										<input type="email" name="EMAIL" placeholder="Your Email Address"
+											class="form-control" required="">
+										<button class="pbmit-form-btn">
+											<i class="pbmit-base-icon-paper-plane"></i>
+										</button>
 									</div>
-								</form>
-								<div class="social-links-wrap">
-									<ul class="pbmit-social-links">
-										<li class="pbmit-social-li pbmit-social-facebook">
-											<a title="Facebook" class="fs-5" target="_blank">
-												<span><i class="pbmit-base-icon-facebook-logo"></i></span>
-											</a>
-										</li>
-										<li class="pbmit-social-li pbmit-social-twitter">
-											<a title="Twitter" class="fs-5" target="_blank">
-												<span><i class="pbmit-base-icon-twitter-2"></i></span>
-											</a>
-										</li>
-										<li class="pbmit-social-li pbmit-social-instagram">
-											<a title="Instagram" class="fs-4" target="_blank">
-												<span><i class="pbmit-base-icon-instagram"></i></span>
-											</a>
-										</li>
-										<li class="pbmit-social-li pbmit-social-youtube">
-											<a title="Youtube" class="fs-4" target="_blank">
-												<span><i class="pbmit-base-icon-youtube-play"></i></span>
-											</a>
-										</li>
-									</ul>
 								</div>
+							</form>
+							<div class="social-links-wrap">
+								<ul class="pbmit-social-links">
+									<li class="pbmit-social-li pbmit-social-facebook">
+										<a title="Facebook" class="fs-5" target="_blank">
+											<span><i class="pbmit-base-icon-facebook-logo"></i></span>
+										</a>
+									</li>
+									<li class="pbmit-social-li pbmit-social-twitter">
+										<a title="Twitter" class="fs-5" target="_blank">
+											<span><i class="pbmit-base-icon-twitter-2"></i></span>
+										</a>
+									</li>
+									<li class="pbmit-social-li pbmit-social-instagram">
+										<a title="Instagram" class="fs-4" target="_blank">
+											<span><i class="pbmit-base-icon-instagram"></i></span>
+										</a>
+									</li>
+									<li class="pbmit-social-li pbmit-social-youtube">
+										<a title="Youtube" class="fs-4" target="_blank">
+											<span><i class="pbmit-base-icon-youtube-play"></i></span>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
-						<div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
-							<aside class="widget">
-								<h2 class="widget-title">Menu</h2>
-								<ul class="menu">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="aboutus.html">About Us</a></li>
-									<li><a href="partners.html">Partners</a></li>
-									<li><a href="tenders.html">Tenders</a></li>
-									<li><a href="programs.html">Programs & Initiatives</a></li>
-									<!-- <li><a href="">Partners</a></li> -->
-									<li><a href="contactus.html">Contact Us</a></li>
-								</ul>
-							</aside>
-						</div>
-						<div
-							class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
-							<aside class="widget">
+					</div>
+					<div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
+						<aside class="widget">
+							<h2 class="widget-title">Menu</h2>
+							<ul class="menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="partners.html">Partners</a></li>
+								<li><a href="tenders.html">Tenders</a></li>
+								<li><a href="programs.html">Programs & Initiatives</a></li>
+								<!-- <li><a href="">Partners</a></li> -->
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div
+						class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
+						<aside class="widget">
 
-							</aside>
-						</div>
-						<div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
-							<aside class="widget">
-								<h2 class="widget-title">Contact Us</h2>
-								<ul class="pbmit-list-items">
-									<li class="pbmit-list-item">
-										<span class="pbmit-list-item-inner">
-											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="tel:+9845104042">
-												<i class="fas fa-phone me-1"></i> 9845104042
-											</a>
+						</aside>
+					</div>
+					<div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
+						<aside class="widget">
+							<h2 class="widget-title">Contact Us</h2>
+							<ul class="pbmit-list-items">
+								<li class="pbmit-list-item">
+									<span class="pbmit-list-item-inner">
+										<a class="pbmit-list-item-link pbmit-list-item-title" href="tel:+9845104042">
+											<i class="fas fa-phone me-1"></i> 9845104042
+										</a>
+									</span>
+								</li>
+								<li class="pbmit-list-item">
+									<span class="pbmit-list-item-inner">
+										<a class="pbmit-list-item-link pbmit-list-item-title"
+											href="mailto:charaka@gmail.com">
+											<i class="fas fa-envelope me-1"></i> charaka@gmail.com
+										</a>
+									</span>
+								</li>
+								<li class="pbmit-list-item">
+									<span class="pbmit-list-item-inner">
+										<span class="pbmit-list-item-title">
+											<i class="fas fa-map-marker-alt me-1"></i> Bengaluru, India
 										</span>
-									</li>
-									<li class="pbmit-list-item">
-										<span class="pbmit-list-item-inner">
-											<a class="pbmit-list-item-link pbmit-list-item-title"
-												href="mailto:charaka@gmail.com">
-												<i class="fas fa-envelope me-1"></i> charaka@gmail.com
-											</a>
-										</span>
-									</li>
-									<li class="pbmit-list-item">
-										<span class="pbmit-list-item-inner">
-											<span class="pbmit-list-item-title">
-												<i class="fas fa-map-marker-alt me-1"></i> Bengaluru, India
-											</span>
-										</span>
-									</li>
-								</ul>
-							</aside>
-						</div>
+									</span>
+								</li>
+							</ul>
+						</aside>
 					</div>
 				</div>
-				<!-- <div class="tween-effect-style-1-wrap">
+			</div>
+			<!-- <div class="tween-effect-style-1-wrap">
 					<div class="pbmit-ele-tween-effect pbmit-tween-image pbmit-tween-effect-style-1">
 						<div class="pbmit-tween-effect charaka-brand" data-x-start="0" data-x-end="0" data-y-start="0"
 							data-y-end="0" data-scale-x-start="0.8" data-scale-x-end="1" data-skew-x-start="0deg"
@@ -1976,22 +1983,22 @@
 						</div>
 					</div>
 				</div> -->
-			</div>
-			<div class="pbmit-footer-text-area">
-				<div class="container">
-					<div class="pbmit-footer-text-inner">
-						<div class="row">
-							<div class="col-md-6">
-								<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
-							</div>
-							<div class="col-md-6 text-md-end text-center">
-								<span>Designed & Developed by Microwebz </span>
-							</div>
+		</div>
+		<div class="pbmit-footer-text-area">
+			<div class="container">
+				<div class="pbmit-footer-text-inner">
+					<div class="row">
+						<div class="col-md-6">
+							<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
+						</div>
+						<div class="col-md-6 text-md-end text-center">
+							<span>Designed & Developed by Microwebz </span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 	</div>
 	<!-- page wrapper End -->
 
@@ -2066,7 +2073,7 @@
 	<!-- Scripts JS -->
 	<script src="js/scripts.js"></script>
 	<script>
-		window.addEventListener('load', function() {
+		window.addEventListener('load', function () {
 			var loader = document.getElementById('loader');
 			if (loader) {
 				loader.style.display = 'none';

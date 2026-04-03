@@ -2127,8 +2127,30 @@ body {
 	}
 	.pbmit-portfolio-style-2.pbmit-active .pbmit-btn-wrap {
 		position: absolute;
-		top: 30px;
+		top: 50px;
 		right: 30px;
+	}
+	.pbmit-portfolio-style-2 .pbmit-btn-wrap::before {
+		content: "";
+		display: inline-block;
+		font-size: 24px;
+		line-height: 1;
+		color: var(--pbmit-second-color, #000);
+		font-weight: 700;
+		transition: transform 0.25s ease;
+	}
+	.pbmit-portfolio-style-2.pbmit-active .pbmit-btn-wrap::before {
+		content: "\2212";
+		color: var(--pbmit-primary-color, #007bff);
+		transform: rotate(0deg);
+	}
+	.pbmit-element-portfolio-style-2 .pbmit-portfolio-style-2 .pbmit-content-wrap {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.35s ease;
+	}
+	.pbmit-element-portfolio-style-2 .pbmit-portfolio-style-2.pbmit-active .pbmit-content-wrap {
+		max-height: 1000px;
 	}
 	.pbmit-portfolio-style-2 .pbmit-portfolio-desc p {
 		margin-bottom: 30px;
@@ -2746,7 +2768,7 @@ body {
 		width: 100%;
 	}
 	.pbmit-portfolio-style-2.pbmit-active .pbmit-btn-wrap::before {
-		opacity: 1;
+		opacity: 0;
 	}
 	.pbmit-portfolio-style-2 .pbmit-btn-wrap {
 		background-color: var(--pbmit-blackish-color);

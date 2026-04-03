@@ -165,8 +165,11 @@
 	}
 
 	var pbmit_portfolio_style2 = function() {
-		jQuery(".pbmit-element-portfolio-style-2 .pbmit-portfolio-style-2").eq(0).addClass('pbmit-active');
-		jQuery(".pbmit-element-portfolio-style-2 .pbmit-portfolio-style-2").on("click", function() {
+		var $cards = jQuery(".pbmit-element-portfolio-style-2 .pbmit-portfolio-style-2");
+		if (!$cards.length) return;
+		$cards.removeClass('pbmit-active');
+		$cards.eq(0).addClass('pbmit-active');
+		$cards.on("click", function() {
 			var main_row = jQuery(this).closest('.pbmit-element-portfolio-style-2');
 			jQuery('.pbmit-portfolio-style-2', main_row).removeClass('pbmit-active');
 			jQuery(this).addClass('pbmit-active');

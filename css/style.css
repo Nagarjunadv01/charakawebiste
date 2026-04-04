@@ -2726,6 +2726,13 @@ form textarea.form-control{
 	resize: none;
 	height: 130px;
 }
+
+.site-navigation ul.navigation > li > a:hover, .site-navigation ul.navigation > li > a:hover::after{
+	color:#e28a2e !important;
+}
+a:focus, a:hover {
+	color: #08c7ff !important;
+}
 .contact-form button{
 	border: none;
 }

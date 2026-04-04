@@ -41,7 +41,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
         .pbmit-slider-one .pbmit-slider-title {
             font-size: 90px !important;
@@ -124,17 +124,20 @@
                 font-size: 27px;
                 line-height: 42px;
             }
-            .pbmit-title1{
+
+            .pbmit-title1 {
                 font-size: 25px !important;
-    line-height: 35px;
+                line-height: 35px;
             }
+
             .section-xl {
-    padding-top: 26px !important;
-    padding-bottom: 45px;
-}
-.about-two-right-box {
-    padding-left: 0px !important;
-}
+                padding-top: 26px !important;
+                padding-bottom: 45px;
+            }
+
+            .about-two-right-box {
+                padding-left: 0px !important;
+            }
         }
 
         @media (max-width: 575px) {
@@ -142,13 +145,20 @@
                 font-size: 28px;
                 line-height: 45px;
             }
-             .height180 {
-            height: auto !important;
-        }
 
-        .height190 {
-            height: auto !important;
-        }
+            .pbmit-titlenew1 {
+                font-size: 22px !important;
+                line-height: 30px !important;
+                letter-spacing: 0px;
+            }
+
+            .height180 {
+                height: auto !important;
+            }
+
+            .height190 {
+                height: auto !important;
+            }
         }
 
         @media (max-width: 767px) {
@@ -205,7 +215,7 @@
 
         .section-xl {
             padding-top: 120px;
-            padding-bottom: 45px;
+            padding-bottom: 0px;
         }
 
         .about-two-right-box {
@@ -311,11 +321,22 @@
             animation-delay: 0.36s;
         }
 
+        .pbmit-titlenew1 {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0px;
+            font-weight: 400;
+        }
+
         @keyframes bloomBounce {
-            0%, 80%, 100% {
+
+            0%,
+            80%,
+            100% {
                 transform: scale(0.85) translateY(0);
                 opacity: 0.75;
             }
+
             40% {
                 transform: scale(1.15) translateY(-10px);
                 opacity: 1;
@@ -323,21 +344,130 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes popIn {
             from {
                 transform: scale(0.92);
                 opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
+
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
             }
         }
+
+        .pbmit-ihbox-box ol {
+            counter-reset: item;
+            padding-left: 0;
+        }
+
+        .pbmit-ihbox-box ol li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 40px;
+            position: relative;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .pbmit-ihbox-box ol li::before {
+            counter-increment: item;
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 17px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #052e3b;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pbmit-ihbox-box li span {
+            font-weight: 600;
+            color: #00232e;
+        }
     </style>
+    <script>
+        // Function to open accordion based on URL hash
+        function openAccordionFromHash() {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                // Map hash values to accordion IDs
+                const accordionMap = {
+                    'healthtech': 'headingOne',
+                    'assistive-tech': 'headingTwo',
+                    'ai-digital-health': 'headingThree',
+                    'translational-research': 'headingfour',
+                    'public-health': 'headingfive',
+                    'knowledge-capacity': 'headingsix'
+                };
+
+                const targetHeading = accordionMap[hash];
+                if (targetHeading) {
+                    // Remove active class from all accordion items
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+
+                    // Collapse all accordion bodies
+                    document.querySelectorAll('.accordion-collapse').forEach(collapse => {
+                        collapse.classList.remove('show');
+                    });
+
+                    // Remove collapsed class from all buttons
+                    document.querySelectorAll('.accordion-button').forEach(button => {
+                        button.classList.add('collapsed');
+                        button.setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Find and open the target accordion
+                    const targetHeader = document.getElementById(targetHeading);
+                    if (targetHeader) {
+                        const targetItem = targetHeader.closest('.accordion-item');
+                        const targetButton = targetHeader.querySelector('.accordion-button');
+                        const targetCollapse = document.getElementById(targetButton.getAttribute('data-bs-target').substring(1));
+
+                        // Add active class to target item
+                        targetItem.classList.add('active');
+
+                        // Remove collapsed class and set aria-expanded to true
+                        targetButton.classList.remove('collapsed');
+                        targetButton.setAttribute('aria-expanded', 'true');
+
+                        // Show the collapse
+                        targetCollapse.classList.add('show');
+
+                        // Scroll to the accordion
+                        setTimeout(() => {
+                            targetHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
+                }
+            }
+        }
+
+        // Run on page load
+        document.addEventListener('DOMContentLoaded', openAccordionFromHash);
+
+        // Run on hash change
+        window.addEventListener('hashchange', openAccordionFromHash);
+    </script>
 </head>
 
 <body>
@@ -382,7 +512,7 @@
                                         <nav class="main-navigation pbmit-navbar main-menu navbar-expand-xl navbar-light"
                                             id="site-navigation">
                                             <div class="pbmit-menu-wrap">
-                                                  <ul class="navigation clearfix" id="pbmit-top-menu">
+                                                <ul class="navigation clearfix" id="pbmit-top-menu">
 
                                                     <li><a href="index.html">Home</a></li>
                                                     <li class="active"><a href="aboutus.html">About Us </a></li>
@@ -515,17 +645,22 @@
             <section class="section-xl about-two-bg">
                 <div class="container">
                     <div class="animated animation fadeInUp">
-                        <div class="pbmit-heading-subheading d-flex flex-column style-2 animation-style3">
+                        <div class="pbmit-heading-subheading d-flex flex-column style-2 animation-style3 mb-3   ">
                             <div class="pbmit-hs-left">
                                 <h2 class="pbmit-subtitle FS-6">About Charaka</h2>
                             </div>
                             <div class="pbmit-hs-right1">
-                                <h2 class="pbmit-title1 mb-0">CHARAKA is a Government of Karnataka initiative being
-                                    established as a <b>Translational Platform for Healthcare Innovation.</b></h2>
+                                <h2 class="pbmit-titlenew1 mb-0"><span>CHARAKA</span> <span>is envisioned as a
+                                        state-backed centre of
+                                        excellence, multi-stakeholder platform to accelerate healthcare innovation by
+                                        bridging systemic gaps across infrastructure, regulation, and translation,
+                                        moving
+                                        beyond a typical incubation model to an integrated ecosystem enabler.</span>
+                                </h2>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0 ">
+                    <div class="row g-0     ">
                         <div
                             class="col-md-5 mt-2  full-width-1024 left-column animated animation fadeInUp animation-delay-100">
                             <div class="about-two-leftbox">
@@ -543,73 +678,37 @@
                                 <div class="ihbox-style-5-wrap pt-0">
                                     <div class="pbmit-ihbox-style-5">
                                         <div class="pbmit-ihbox-box">
-                                            <ul style="list-style-type: disc; padding-left: 20px;">
-                                                <!-- <li>
-                                                    <p class="mb-2 text-justify">The Centre of Excellence (CoE) in
-                                                        MedTech, HealthTech & Assistive
-                                                        Tech, a
-                                                        section 8, not for profit, established by the Government of
-                                                        Karnataka
-                                                        represents a strategic public investment to address one of
-                                                        India’s most
-                                                        pressing and complex challenges: translating clinical needs,
-                                                        scientific
-                                                        innovation into scalable, affordable, accessible and deployable
-                                                        technologies.</p>
-                                                </li> -->
-                                                <li>
-                                                    <p class="mb-1 text-justify">Anchored under the Department of
-                                                        Electronics, IT, Biotechnology and Science & Technology, and
-                                                        implemented through a high-calibre, multi-stakeholder Board, the
-                                                        CoE is designed as an institutional platform rather than a
-                                                        standalone incubation program.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="mb-1 text-justify">India’s healthcare system faces a dual
-                                                        burden, rising non-communicable diseases alongside persistent
-                                                        gaps in primary care, diagnostics, and access, while remaining
-                                                        heavily dependent on imported medical devices and fragmented
-                                                        digital health solutions. The CoE directly responds to this gap
-                                                        by creating shared infrastructure, regulatory-aware labs, and
-                                                        translational support systems that individual startups, MSMEs,
-                                                        and hospitals cannot build on their own. The CoE will support
-                                                        innovators across the complete value chain from clinical problem
-                                                        identification and prototyping to testing, validation,
-                                                        low-volume manufacturing, and incubation.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="mb-1 text-justify">Karnataka, especially Bengaluru is
-                                                        uniquely positioned to host such a platform. The state already
-                                                        houses a dense ecosystem of medical colleges, tertiary
-                                                        hospitals, global capability centres, deep-tech startups, and
-                                                        premier research institutions. However, these assets often
-                                                        operate in silos. The CoE is intended to act as a connective
-                                                        tissue, linking clinicians, engineers, researchers,
-                                                        manufacturers, investors, and policymakers, thereby reducing
-                                                        time-to-market and de-risking innovation. The proposed
-                                                        integration of initiatives such as Assistive Technology CoEs,
-                                                        integrated medicine, and global programs like Stanford Biodesign
-                                                        further strengthens this translational and global-to-local
-                                                        pipeline.</p>
-                                                </li>
-                                                <!--<li>-->
-                                                <!--    <p class="mb-1 text-justify">Importantly, the CoE is not limited to-->
-                                                <!--        technology development alone. Its mandate includes skill-->
-                                                <!--        development, regulatory navigation, design prototyping and-->
-                                                <!--        manufacturing readiness, and primary care transformation,-->
-                                                <!--        aligning innovation outputs with public health priorities and-->
-                                                <!--        procurement realities. </p>-->
-                                                <!--</li>-->
-                                                <!-- <li>
-                                                    <p class="text-justify">In essence, the CoE is a strategic public
-                                                        good: it strengthens domestic capabilities, enables frugal and
-                                                        inclusive innovation, supports MSMEs and startups to scale
-                                                        responsibly, and intends to position Karnataka as a national and
-                                                        global hub for healthtech, medtech, biotech and assistive tech
-                                                        that is clinically relevant, equitable, ethically grounded, and
-                                                        system-ready.</p>
-                                                </li> -->
-                                            </ul>
+                                            <ol>
+                                                <li><span>Institutional Platform:</span> Anchored under the Department
+                                                    of IT, BT&ST, the CoE operates as a long-term institutional
+                                                    mechanism with strategic oversight.</li>
+                                                <li><span>Multi-Stakeholder Governance:</span> Led by a high-calibre
+                                                    leadership integrating government, academia, industry, and clinical
+                                                    expertise.</li>
+                                                <li><span>Addressing India’s Dual Health Burden:</span> Targets both
+                                                    rising NCDs and persistent gaps in primary care, diagnostics, and
+                                                    access.</li>
+                                                <li><span>Building Autonomy:</span> Strengthens indigenous MedTech
+                                                    innovation to reduce reliance on imported medical devices.</li>
+                                                <li><span>Shared High-End Infrastructure:</span> Provides
+                                                    regulatory-aware labs, testing facilities, and translational
+                                                    infrastructure otherwise inaccessible to startups/MSMEs.</li>
+                                                <li><span>End-to-End Innovation Support:</span> Covers the full
+                                                    lifecycle: clinical need identification → prototyping → validation →
+                                                    low-volume manufacturing → incubation.</li>
+                                                <li><span>Bridging Ecosystem Silos:</span> Acts as a “connective tissue”
+                                                    linking clinicians, engineers, researchers, manufacturers,
+                                                    investors, and policymakers.</li>
+                                                <li><span>Leveraging India & Karnataka’s Strengths:</span> Builds on
+                                                    state & country’s dense ecosystem of hospitals, research
+                                                    institutions, GCCs, and deep-tech startups. Starting from Bengaluru,
+                                                    Karnataka, to India and the World.</li>
+                                                <li><span>Accelerating Time-to-Market:</span> De-risks innovation
+                                                    pathways and shortens commercialization cycles.</li>
+                                                <li><span>Global-Local Integration:</span> Aligns with initiatives like
+                                                    Assistive Tech CoEs, integrated medicine, and global programs such
+                                                    as Stanford Biodesign to enable cross-border innovation flow.</li>
+                                            </ol>
 
                                         </div>
                                     </div>
@@ -744,7 +843,7 @@
                                                 </li>
                                             </ul>
                                             <div class="d-flex flex-column align-items-start">
-                                                <a href="" class="pbmit-btn mt-3 ms-3">
+                                                <a href="index.html#explorevision" class="pbmit-btn mt-3 ms-3">
                                                     <span class="pbmit-button-content-wrapper">
                                                         <span class="pbmit-button-text">Explore Vision</span>
                                                         <!--<span class="pbmit-button-icon">-->
@@ -1264,6 +1363,50 @@
                                         <div class="pbmit-featured-inner">
                                             <div class="pbmit-featured-img-wrapper">
                                                 <div class="pbmit-featured-wrapper">
+                                                    <img src="images/boardofdirectors/resize-DrBhaskarRajakumarCEO.jpeg"
+                                                        class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                            <a class="pbmit-link" href="#" title="Go to Darrell Steward"></a>
+                                        </div>
+                                        <div class="pbmit-team-social">
+                                            <ul class="pbmit-social-links pbmit-team-social-links">
+                                                <li class="pbmit-social-li pbmit-social-facebook">
+                                                    <a href="#" title="Facebook" target="_blank">
+                                                        <span><i class="pbmit-base-icon-facebook-logo"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="pbmit-social-li pbmit-social-twitter">
+                                                    <a href="#" title="Twitter" target="_blank">
+                                                        <span><i class="pbmit-base-icon-twitter-2"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="pbmit-social-li pbmit-social-instagram">
+                                                    <a href="#" title="Instagram" target="_blank">
+                                                        <span><i class="pbmit-base-icon-instagram"></i></span>
+                                                    </a>
+                                                </li>
+                                                <li class="pbmit-social-li pbmit-social-youtube">
+                                                    <a href="#" title="Youtube" target="_blank">
+                                                        <span><i class="pbmit-base-icon-youtube-play"></i></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="pbmit-box-title-wrap height180 d-flex flex-column justify-content-center">
+                                        <h1 class="pbmit-team-title"><a href="#">Dr Bhaskar Rajakumar</a></h1>
+                                        <div class="pbminfotech-team-position">CEO, CHARAKA</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="pbmit-team-style-1 col-md-6 col-lg-3">
+                                <div class="pbminfotech-post-item">
+                                    <div class="pbmit-box-content">
+                                        <div class="pbmit-featured-inner">
+                                            <div class="pbmit-featured-img-wrapper">
+                                                <div class="pbmit-featured-wrapper">
                                                     <img src="images/boardofdirectors/manjula.jpeg" class="img-fluid"
                                                         alt="">
                                                 </div>
@@ -1581,7 +1724,8 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="pbmit-box-title-wrap height190 d-flex flex-column justify-content-center">
+                                        <div
+                                            class="pbmit-box-title-wrap height190 d-flex flex-column justify-content-center">
                                             <h1 class="pbmit-team-title"><a href="#">Dr Bhagwan</a></h1>
                                             <div class="pbminfotech-team-position">Vice Chancellor, RGUHS</div>
                                         </div>
@@ -1624,7 +1768,8 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="pbmit-box-title-wrap height190 d-flex flex-column justify-content-center">
+                                        <div
+                                            class="pbmit-box-title-wrap height190 d-flex flex-column justify-content-center">
                                             <h1 class="pbmit-team-title"><a href="#">Gurudatt Hegde IAS</a></h1>
                                             <div class="pbminfotech-team-position">Commissioner, Department of Health
                                                 and Family Welfare, GoK</div>
@@ -1647,106 +1792,107 @@
         <!-- Page Content End -->
 
         <!-- footer -->
-	<footer class="site-footer pbmit-footer-style-1">
-		<div class="container">
-			<div class="pbmit-footer-widget-area">
-				<div class="row">
-					<div class="pbmit-footer-widget-col-1 col-md-4 left-column">
-						<div class="left-area animated animation fadeInUp">
-							<h2 class="pbmit-subtitle d-flex flex-row align-items-center gap-1"><img
-									src="images/website/website/charakafooterimage.png" class="charaka-logo"
-									alt="Charaka Logo"> <span class="fs-4 text-white">CHARAKA</span> </h2>
-							<h2 class="pbmit-title">Building India’s Future
-								Health Innovation Engine.</h2>
-							<form>
-								<div class="pbmit-footer-newsletter">
-									<div class="pbmit-news-wrap">
-										<input type="email" name="EMAIL" placeholder="Your Email Address"
-											class="form-control" required="">
-										<button class="pbmit-form-btn">
-											<i class="pbmit-base-icon-paper-plane"></i>
-										</button>
-									</div>
-								</div>
-							</form>
-							<div class="social-links-wrap">
-								<ul class="pbmit-social-links">
-									<li class="pbmit-social-li pbmit-social-facebook">
-										<a title="Facebook" class="fs-5" target="_blank">
-											<span><i class="pbmit-base-icon-facebook-logo"></i></span>
-										</a>
-									</li>
-									<li class="pbmit-social-li pbmit-social-twitter">
-										<a title="Twitter" class="fs-5" target="_blank">
-											<span><i class="pbmit-base-icon-twitter-2"></i></span>
-										</a>
-									</li>
-									<li class="pbmit-social-li pbmit-social-instagram">
-										<a title="Instagram" class="fs-4" target="_blank">
-											<span><i class="pbmit-base-icon-instagram"></i></span>
-										</a>
-									</li>
-									<li class="pbmit-social-li pbmit-social-youtube">
-										<a title="Youtube" class="fs-4" target="_blank">
-											<span><i class="pbmit-base-icon-youtube-play"></i></span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
-						<aside class="widget">
-							<h2 class="widget-title">Menu</h2>
-							<ul class="menu">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="aboutus.html">About Us</a></li>
-								<li><a href="partners.html">Partners</a></li>
-								<li><a href="tenders.html">Tenders</a></li>
-								<li><a href="programs.html">Programs & Initiatives</a></li>
-								<!-- <li><a href="">Partners</a></li> -->
-								<li><a href="contactus.html">Contact Us</a></li>
-							</ul>
-						</aside>
-					</div>
-					<div
-						class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
-						<aside class="widget">
+        <footer class="site-footer pbmit-footer-style-1">
+            <div class="container">
+                <div class="pbmit-footer-widget-area">
+                    <div class="row">
+                        <div class="pbmit-footer-widget-col-1 col-md-4 left-column">
+                            <div class="left-area animated animation fadeInUp">
+                                <h2 class="pbmit-subtitle d-flex flex-row align-items-center gap-1"><img
+                                        src="images/website/website/charakafooterimage.png" class="charaka-logo"
+                                        alt="Charaka Logo"> <span class="fs-4 text-white">CHARAKA</span> </h2>
+                                <h2 class="pbmit-title">Building India’s Future
+                                    Health Innovation Engine.</h2>
+                                <form>
+                                    <div class="pbmit-footer-newsletter">
+                                        <div class="pbmit-news-wrap">
+                                            <input type="email" name="EMAIL" placeholder="Your Email Address"
+                                                class="form-control" required="">
+                                            <button class="pbmit-form-btn">
+                                                <i class="pbmit-base-icon-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="social-links-wrap">
+                                    <ul class="pbmit-social-links">
+                                        <li class="pbmit-social-li pbmit-social-facebook">
+                                            <a title="Facebook" class="fs-5" target="_blank">
+                                                <span><i class="pbmit-base-icon-facebook-logo"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="pbmit-social-li pbmit-social-twitter">
+                                            <a title="Twitter" class="fs-5" target="_blank">
+                                                <span><i class="pbmit-base-icon-twitter-2"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="pbmit-social-li pbmit-social-instagram">
+                                            <a title="Instagram" class="fs-4" target="_blank">
+                                                <span><i class="pbmit-base-icon-instagram"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="pbmit-social-li pbmit-social-youtube">
+                                            <a title="Youtube" class="fs-4" target="_blank">
+                                                <span><i class="pbmit-base-icon-youtube-play"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pbmit-footer-widget-col-2 col-md-4 animated animation fadeInUp animation-delay-100">
+                            <aside class="widget">
+                                <h2 class="widget-title">Menu</h2>
+                                <ul class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="partners.html">Partners</a></li>
+                                    <li><a href="tenders.html">Tenders</a></li>
+                                    <li><a href="programs.html">Programs & Initiatives</a></li>
+                                    <!-- <li><a href="">Partners</a></li> -->
+                                    <li><a href="contactus.html">Contact Us</a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div
+                            class="pbmit-footer-widget-col-3 col-md-2 animated animation fadeInUp animation-delay-200 d-none d-lg-flex">
+                            <aside class="widget">
 
-						</aside>
-					</div>
-					<div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
-						<aside class="widget">
-							<h2 class="widget-title">Contact Us</h2>
-							<ul class="pbmit-list-items">
-								<li class="pbmit-list-item">
-									<span class="pbmit-list-item-inner">
-										<a class="pbmit-list-item-link pbmit-list-item-title" href="tel:+9845104042">
-											<i class="fas fa-phone me-1"></i> 9845104042
-										</a>
-									</span>
-								</li>
-								<li class="pbmit-list-item">
-									<span class="pbmit-list-item-inner">
-										<a class="pbmit-list-item-link pbmit-list-item-title"
-											href="mailto:charaka@gmail.com">
-											<i class="fas fa-envelope me-1"></i> charaka@gmail.com
-										</a>
-									</span>
-								</li>
-								<li class="pbmit-list-item">
-									<span class="pbmit-list-item-inner">
-										<span class="pbmit-list-item-title">
-											<i class="fas fa-map-marker-alt me-1"></i> Bengaluru, India
-										</span>
-									</span>
-								</li>
-							</ul>
-						</aside>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="tween-effect-style-1-wrap">
+                            </aside>
+                        </div>
+                        <div class="pbmit-footer-widget-col-4 col-md-4 animated animation fadeInUp animation-delay-300">
+                            <aside class="widget">
+                                <h2 class="widget-title">Contact Us</h2>
+                                <ul class="pbmit-list-items">
+                                    <li class="pbmit-list-item">
+                                        <span class="pbmit-list-item-inner">
+                                            <a class="pbmit-list-item-link pbmit-list-item-title"
+                                                href="tel:+9845104042">
+                                                <i class="fas fa-phone me-1"></i> 9845104042
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="pbmit-list-item">
+                                        <span class="pbmit-list-item-inner">
+                                            <a class="pbmit-list-item-link pbmit-list-item-title"
+                                                href="mailto:charaka@gmail.com">
+                                                <i class="fas fa-envelope me-1"></i> charaka@gmail.com
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="pbmit-list-item">
+                                        <span class="pbmit-list-item-inner">
+                                            <span class="pbmit-list-item-title">
+                                                <i class="fas fa-map-marker-alt me-1"></i> Bengaluru, India
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="tween-effect-style-1-wrap">
 					<div class="pbmit-ele-tween-effect pbmit-tween-image pbmit-tween-effect-style-1">
 						<div class="pbmit-tween-effect charaka-brand" data-x-start="0" data-x-end="0" data-y-start="0"
 							data-y-end="0" data-scale-x-start="0.8" data-scale-x-end="1" data-skew-x-start="0deg"
@@ -1758,22 +1904,22 @@
 						</div>
 					</div>
 				</div> -->
-		</div>
-		<div class="pbmit-footer-text-area">
-			<div class="container">
-				<div class="pbmit-footer-text-inner">
-					<div class="row">
-						<div class="col-md-6">
-							<span>Copyright © 2026 Charaka, All Rights Reserved.</span>
-						</div>
-						<div class="col-md-6 text-md-end text-center">
-							<span>Designed & Developed by Microwebz </span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+            </div>
+            <div class="pbmit-footer-text-area">
+                <div class="container">
+                    <div class="pbmit-footer-text-inner">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span>Copyright © 2026 Charaka, All Rights Reserved.</span>
+                            </div>
+                            <div class="col-md-6 text-md-end text-center">
+                                <span>Designed & Developed by Microwebz </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- page wrapper End -->
 
@@ -1848,7 +1994,7 @@
     <!-- Scripts JS -->
     <script src="js/scripts.js"></script>
     <script>
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             var loader = document.getElementById('loader');
             if (loader) {
                 loader.style.display = 'none';

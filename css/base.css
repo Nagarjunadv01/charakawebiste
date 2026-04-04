@@ -20,7 +20,7 @@ INDEX:
 :root {
 	--pbmit-global-color: #114c5f;
 	--pbmit-global-color-rgb: 17, 76, 95;
-	--pbmit-secondary-color: #33d1cb;
+	--pbmit-secondary-color: #e28a2e;
 	--pbmit-secondary-color-rgb: 51, 209, 203;
 	--pbmit-light-color: #ebf2f4;
 	--pbmit-white-color: #ffffff;
@@ -29,7 +29,7 @@ INDEX:
 	--pbmit-blackish-color: #052e3b;
 	--pbmit-blackish-color-rgb: 5, 46, 59;
 	--pbmit-link-color-normal: #052e3b;
-	--pbmit-link-color-hover: #33d1cb;
+	--pbmit-link-color-hover: #e28a2e;
 	--pbmit-responsive-breakpoint: 1200px;
 
 	--pbmit-body-typography-font-family: "Heebo", sans-serif;
@@ -631,7 +631,7 @@ ul.pbmit-contact-info{
 .pbmit-backtotop {
 	position: fixed;
 	bottom: -50px;
-	right: 35px;
+	right: 5px;
 	width: 50px;
 	height: 50px;
 	font-size: 24px;
@@ -648,7 +648,7 @@ ul.pbmit-contact-info{
 	transition: all 0.3s ease-in-out;
 }
 .pbmit-backtotop.active {
-	bottom: 15px;
+	bottom: 10px;
 	opacity: 1;
 }
 .pbmit-backtotop > div {
